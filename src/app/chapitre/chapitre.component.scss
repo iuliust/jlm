@@ -1,0 +1,23 @@
+.titre-chapitre {
+	font-weight: normal;
+}
+
+.titre-section {
+	font-weight: normal;
+}
+
+.avant-propos {
+	background-color: lightgrey;
+	padding: 8px;
+
+	blockquote {
+		p {
+			margin-top: 2em;
+			text-align: justify;
+		}
+	}
+}
+
+ul {
+	list-style-type: none;
+}

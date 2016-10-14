@@ -1,0 +1,19 @@
+ul {
+	display: flex;
+	list-style-type: none;
+}
+
+li {
+	flex: 1;
+}
+
+a {
+	border: 1px solid black;
+	color: black;
+	display: block;
+	padding: .5em;
+
+	&:hover {
+		background-color: lightgrey;
+	}
+}
