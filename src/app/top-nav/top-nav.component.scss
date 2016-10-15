@@ -1,14 +1,20 @@
+:host {
+	margin-bottom: 1em;
+	display: block;
+}
+
 ul {
 	display: flex;
 	list-style-type: none;
+	padding-left: 0;
 }
 
 li {
 	flex: 1;
+	text-align: center;
 }
 
 a {
-	border: 1px solid black;
 	color: black;
 	display: block;
 	padding: .5em;
