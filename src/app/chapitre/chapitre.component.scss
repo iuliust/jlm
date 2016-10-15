@@ -18,6 +18,20 @@
 	}
 }
 
-ul {
-	list-style-type: none;
+.avant-propos ~ article {
+	padding: 1em;
+	font-size: 1.1em;
+
+	p {
+		text-align: justify;
+		font-style: italic;
+		margin-bottom: 1em;
+		line-height: 1.2em;
+	}
+
+	ul {
+		// list-style-type: none;
+		-webkit-margin-before: 1em;
+		-webkit-padding-start: 40px;
+	}
 }
