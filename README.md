@@ -1,5 +1,14 @@
-<<<<<<< HEAD
 # Jlm
+Voici mon idée :
+Et s'il y avait une nouvelle façon de débattre de la politique ? D'imaginer les programmes politiques ? De les construire... Ensemble ? Voici donc mon idée (géniale, comme d'habitude) :
+D'abord, on corrige toutes les fautes de type en crowd-sourcing. Puis on ajoute, on amende tout ce que l'on souhaite et les diffs sont votés. Faites-en ce que vous voulez. Bref, prenez le pouvoir... Pour de vrai !
+Stop complaining and start DOING something, 4 the LULZ. #onVautMieuxQueÇa
+
+# jlm
+
+Ceci est le programme du candidat Jxxx-Lxx Mxxxxxxxx pour l'élection présidentielle de 2017. Entièrement non-officiel.
+
+
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.17.
 
@@ -20,7 +29,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Deploying to Github Pages
@@ -31,6 +40,3 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 =======
-# jlm
-Ceci est le programme du candidat Jxxx-Lxx Mxxxxxxxx pour l'élection présidentielle de 2017. Entièrement non-officiel.
->>>>>>> 65c6538269e9c6deb95a3dfe8bb4bb4a79286b3d
