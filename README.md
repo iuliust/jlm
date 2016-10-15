@@ -1,7 +1,3 @@
-# jlm
-
-Ceci est le programme du candidat Jxxx-Lxx Mxxxxxxxx pour l'élection présidentielle de 2017\. Entièrement non-officiel.
-
 # Jlm
 
 Voici mon idée : Et s'il y avait une nouvelle façon de débattre de la politique ? D'imaginer les programmes politiques ? De les construire... Ensemble ?
