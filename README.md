@@ -1,7 +1,9 @@
 # Jlm
 Voici mon idée :
-Et s'il y avait une nouvelle façon de débattre de la politique ? D'imaginer les programmes politiques ? De les construire... Ensemble ? Voici donc mon idée (géniale, comme d'habitude) :
-D'abord, on corrige toutes les fautes de type en crowd-sourcing. Puis on ajoute, on amende tout ce que l'on souhaite et les diffs sont votés. Faites-en ce que vous voulez. Bref, prenez le pouvoir... Pour de vrai !
+Et s'il y avait une nouvelle façon de débattre de la politique ? D'imaginer les programmes politiques ? De les construire... Ensemble ?
+
+Voici donc mon idée (géniale, comme d'habitude) :
+D'abord, on corrige toutes les fautes de frappe en crowd-sourcing. Puis on ajoute, on amende tout ce que l'on souhaite et les diffs sont votés. Faites-en ce que vous voulez. Bref, prenez le pouvoir... Pour de vrai !
 Stop complaining and start DOING something, 4 the LULZ. #onVautMieuxQueÇa
 
 # jlm
