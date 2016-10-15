@@ -31,7 +31,7 @@ export class ChapitreComponent implements OnInit, AfterViewInit {
 			.toPromise()
 			.then((res: Response) => {
 				this.includeDiv.nativeElement.innerHTML = res.text();
-				// this.template = res.text();
+				
 			});
 		});
 	}
