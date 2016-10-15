@@ -11,11 +11,24 @@
 	padding: 8px;
 
 	blockquote {
+		font-style: italic;
+
 		p {
 			margin-top: 2em;
 			text-align: justify;
+
+			&:first-of-type::before {
+				content: "«";
+			}
+			&:last-of-type::after {
+				content: "»";
+			}
 		}
 	}
+}
+
+sup.eme {
+	vertical-align: text-bottom;
 }
 
 .avant-propos ~ article {
@@ -32,7 +45,6 @@
 	ul {
 		// list-style-type: none;
 		text-align: justify;
-		-webkit-margin-before: 1em;
 		-webkit-padding-start: 40px;
 	}
 }
