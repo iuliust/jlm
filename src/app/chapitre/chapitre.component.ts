@@ -1,38 +1,52 @@
-import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, ViewEncapsulation, Renderer } from '@angular/core';
+import { NgModule, Component, OnInit, AfterViewInit, ViewChild, ViewContainerRef, Compiler, ComponentFactory, ViewEncapsulation } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { ActivatedRoute, Params } from '@angular/router';
 import 'rxjs/add/operator/toPromise';
 
 @Component({
   selector: 'jlm-chapitre',
-  // templateUrl: '../../assets/programme/chapitre01.html',
   templateUrl: './chapitre.component.html',
-  styleUrls: ['./chapitre.component.scss'],
-	encapsulation: ViewEncapsulation.None
+  styleUrls: ['./chapitre.component.scss']
 })
 export class ChapitreComponent implements OnInit, AfterViewInit {
-	@ViewChild('include') includeDiv: ElementRef;
-	template: String = `<div>Veuillez patienter pendant le chargement du chapitre...</div>`;
+	@ViewChild('include', { read: ViewContainerRef }) includeDiv: ViewContainerRef;
 
   constructor(
 		private route : ActivatedRoute,
 		private http: Http,
-		private renderer: Renderer
+    private viewContainer: ViewContainerRef,
+		private compiler: Compiler
 	) { }
-
-  ngOnInit() {
-		// console.dir(this.includeDiv);
-  }
 
 	ngAfterViewInit() {
 		this.route.params.forEach((params: Params) => {
-			let id = +params['chapitreId'];
-			this.http.get(`/assets/programme/chapitre0${id}.html`)
+			const chapitreId = +params['chapitreId'];
+			this.http.get(`/assets/programme/chapitre0${chapitreId}.html`)
 			.toPromise()
 			.then((res: Response) => {
-				this.includeDiv.nativeElement.innerHTML = res.text();
-				
+				this.injectTemplate(res.text());
 			});
 		});
 	}
+
+	injectTemplate(template: string) {
+		this.includeDiv.clear();
+
+		@Component({
+			template: template,
+			styleUrls: ['./chapitre.component.scss']
+		})
+		class TemplateComponent {}
+
+		@NgModule({declarations: [TemplateComponent]})
+		class TemplateModule {}
+
+		const module = this.compiler.compileModuleAndAllComponentsSync(TemplateModule);
+		const factory = module.componentFactories.find((comp: ComponentFactory<any>) => {
+			return comp.componentType === TemplateComponent
+		});
+		const component = this.includeDiv.createComponent(factory);
+}
+
+	ngOnInit() {}
 }
