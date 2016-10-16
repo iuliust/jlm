@@ -12,14 +12,21 @@ ul {
 li {
 	flex: 1;
 	text-align: center;
+	color: black;
+
+	&.active-link {
+		color: firebrick;
+	}
 }
 
 a {
-	color: black;
+	color: inherit;
 	display: block;
 	padding: .5em;
+	text-decoration: none;
 
 	&:hover {
 		background-color: lightgrey;
+		text-decoration: underline;
 	}
 }

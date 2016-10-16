@@ -29,12 +29,18 @@
 }
 
 sup.eme {
-	vertical-align: text-bottom;
+	vertical-align: text-top;
 }
 
-.avant-propos ~ article {
+article.section {
 	padding: 1em;
 	font-size: 1.1em;
+	background-color: white;
+	margin: 1em 0;
+
+	.titre-section {
+		margin: 0;
+	}
 
 	p {
 		text-align: justify;
@@ -47,5 +53,6 @@ sup.eme {
 		// list-style-type: none;
 		text-align: justify;
 		-webkit-padding-start: 40px;
+		list-style-type: decimal-leading-zero;
 	}
 }

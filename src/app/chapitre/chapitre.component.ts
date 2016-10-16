@@ -41,11 +41,19 @@ export class ChapitreComponent implements OnInit, AfterViewInit {
 		@NgModule({declarations: [TemplateComponent]})
 		class TemplateModule {}
 
+		// this.compiler.compileModuleAndAllComponentsAsync(TemplateModule)
+		// 	.then((module) => {
+		// 		const factory = module.componentFactories.find((comp: ComponentFactory<any>) => {
+		// 			return  comp.componentType === TemplateComponent;
+		// 		});
+		// 		const component = this.includeDiv.createComponent(factory);
+		// 	});
+
 		const module = this.compiler.compileModuleAndAllComponentsSync(TemplateModule);
 		const factory = module.componentFactories.find((comp: ComponentFactory<any>) => {
 			return comp.componentType === TemplateComponent
 		});
-		const component = this.includeDiv.createComponent(factory);
+		this.includeDiv.createComponent(factory);
 }
 
 	ngOnInit() {}
