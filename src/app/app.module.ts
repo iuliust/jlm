@@ -5,11 +5,12 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
+import { TemplateDirectivesModule } from './template-directives/template-directives.module';
+
 import { AppComponent } from './app.component';
 import { ChapitreComponent } from './chapitre/chapitre.component';
 import { HomeComponent } from './home/home.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
-import { TemplateDirectivesModule } from './template-directives/template-directives.module';
 
 @NgModule({
 	declarations: [
