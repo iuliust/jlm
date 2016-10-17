@@ -9,24 +9,26 @@ import { AppComponent } from './app.component';
 import { ChapitreComponent } from './chapitre/chapitre.component';
 import { HomeComponent } from './home/home.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
+import { TemplateDirectivesModule } from './template-directives/template-directives.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ChapitreComponent,
-    HomeComponent,
-    TopNavComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
+	declarations: [
+		AppComponent,
+		ChapitreComponent,
+		HomeComponent,
+		TopNavComponent
+	],
+	imports: [
+		BrowserModule,
+		FormsModule,
+		HttpModule,
 		RouterModule.forRoot([
 			{ path: '', component: HomeComponent },
 			{ path: 'chapitre/:chapitreId', component: ChapitreComponent }
-		])
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+		]),
+		TemplateDirectivesModule
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }

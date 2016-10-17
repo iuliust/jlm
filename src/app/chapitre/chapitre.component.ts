@@ -1,7 +1,20 @@
-import { NgModule, Component, OnInit, AfterViewInit, ViewChild, ViewContainerRef, Compiler, ComponentFactory, ViewEncapsulation } from '@angular/core';
+import {
+	NgModule,
+	Component,
+	OnInit,
+	AfterViewInit,
+	ViewChild,
+	ViewContainerRef,
+	Compiler,
+	ComponentFactory,
+	ViewEncapsulation } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Http, Response } from '@angular/http';
 import { ActivatedRoute, Params } from '@angular/router';
 import 'rxjs/add/operator/toPromise';
+
+import { TemplateDirectivesModule } from '../template-directives/template-directives.module';
+import { IntersectionObserverService } from '../template-directives/intersection-observer.service';
 
 @Component({
   selector: 'jlm-chapitre',
@@ -38,16 +51,14 @@ export class ChapitreComponent implements OnInit, AfterViewInit {
 		})
 		class TemplateComponent {}
 
-		@NgModule({declarations: [TemplateComponent]})
+		@NgModule({
+			declarations: [TemplateComponent],
+			imports: [
+				TemplateDirectivesModule,
+				CommonModule
+			]
+		})
 		class TemplateModule {}
-
-		// this.compiler.compileModuleAndAllComponentsAsync(TemplateModule)
-		// 	.then((module) => {
-		// 		const factory = module.componentFactories.find((comp: ComponentFactory<any>) => {
-		// 			return  comp.componentType === TemplateComponent;
-		// 		});
-		// 		const component = this.includeDiv.createComponent(factory);
-		// 	});
 
 		const module = this.compiler.compileModuleAndAllComponentsSync(TemplateModule);
 		const factory = module.componentFactories.find((comp: ComponentFactory<any>) => {
