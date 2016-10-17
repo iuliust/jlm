@@ -11,13 +11,15 @@ import { AppComponent } from './app.component';
 import { ChapitreComponent } from './chapitre/chapitre.component';
 import { HomeComponent } from './home/home.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
+import { EncartFiltresComponent } from './encart-filtres/encart-filtres.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		ChapitreComponent,
 		HomeComponent,
-		TopNavComponent
+		TopNavComponent,
+		EncartFiltresComponent
 	],
 	imports: [
 		BrowserModule,

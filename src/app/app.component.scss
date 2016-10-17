@@ -1,13 +1,31 @@
 :host {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	width: 800px;
 	margin: auto;
-	width: 700px;
 }
 
 h1 {
 	font-weight: normal;
 }
 
-h1, jlm-top-nav, jlm-chapitre {
+div {
+	display: flex;
+	flex-direction: row;
+	position: relative;
 
+	main {
+		display: flex;
+		flex: 1;
+		flex-flow: column;
+	}
+
+	aside {
+		position: sticky;
+		margin-left: 10px;
+		top: 10px;
+		flex-basis: 200px;
+		background-color: var(--secondary-background-color);
+		align-self: flex-start;
+	}
 }

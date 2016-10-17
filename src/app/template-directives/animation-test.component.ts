@@ -1,6 +1,7 @@
 import {
 	Component,
 	OnInit,
+	OnDestroy,
 	AfterViewInit,
 	ViewChild,
 	HostBinding,
@@ -11,13 +12,14 @@ import {
 	style,
 	transition,
 	animate,
-	NgZone
+	NgZone,
+	ViewEncapsulation
 } from '@angular/core';
 
 @Component({
   selector: '[jlm-animation-test]',
 	template: `<ng-content></ng-content>`,
-	styles: [`:host {display: block}`],
+	styles: [`:host {display: block; will-change: opacity}`],
 	animations: [
 		trigger('heroState', [
 			state('inactive', style({
@@ -29,24 +31,31 @@ import {
 			transition('inactive => active', animate('500ms ease-in')),
 			transition('active => inactive', animate('500ms ease-out'))
 		])
-	]
+	],
+	// encapsulation: ViewEncapsulation.Native
 })
 export class AnimationTestComponent implements AfterViewInit {
 	@HostBinding('@heroState') state: string = 'inactive';
+	private io: any;
 	dejaVu: boolean = false;
 
   constructor(private zone: NgZone, private ref: ElementRef) {  }
 
 	ngAfterViewInit() {
 		const IntersectionObserver: any = window['IntersectionObserver'];
-		const io = new IntersectionObserver(entries => {
+		this.io = new IntersectionObserver(entries => {
 				this.zone.run(
 					() => this.intersectionObserverCallback(entries)
 				);
 			}, {
 			threshold: [0, .5, 1]
 		});
-		io.observe(this.ref.nativeElement);
+		this.io.observe(this.ref.nativeElement);
+	}
+
+	ngOnDestroy() {
+		this.io.unobserve(this.ref.nativeElement);
+		this.io.disconnect();
 	}
 
 	intersectionObserverCallback(entries) {

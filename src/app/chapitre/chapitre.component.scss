@@ -1,13 +1,13 @@
-.titre-chapitre {
-	font-weight: normal;
+:host {
+	display: block;
 }
 
-.titre-section {
+.chapitre--titre {
 	font-weight: normal;
 }
 
 .avant-propos {
-	background-color: lightgrey;
+	background-color: var(--secondary-background-color);
 	padding: 1em;
 
 	blockquote {
@@ -40,6 +40,7 @@ article.section {
 
 	.titre-section {
 		margin: 0;
+		font-weight: normal;
 	}
 
 	p {
@@ -50,9 +51,8 @@ article.section {
 	}
 
 	ul {
-		// list-style-type: none;
 		text-align: justify;
 		-webkit-padding-start: 40px;
-		list-style-type: decimal-leading-zero;
+		-moz-padding-start: 40px;
 	}
 }

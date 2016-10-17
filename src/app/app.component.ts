@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Programme de Jean-Luc Mélenchon';
+  title = `L'avenir en commun`;
 }

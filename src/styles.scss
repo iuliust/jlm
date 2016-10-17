@@ -2,5 +2,7 @@
 // @import url('https://fonts.googleapis.com/css?family=Noto+Serif');
 
 body {
-	background-color: hsl(0, 0%, 96%);
+	--main-background-color: hsl(0, 0%, 96%);
+	--secondary-background-color: hsl(0, 0%, 83%);
+	background-color: var(--main-background-color);
 }
