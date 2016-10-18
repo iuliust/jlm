@@ -6,7 +6,7 @@ import { MesureDirective } from './mesure/mesure.directive';
 @NgModule({
   imports: [],
   declarations: [AnimationTestComponent, MesureDirective],
-	exports: [AnimationTestComponent],
+	exports: [AnimationTestComponent, MesureDirective],
 	providers: [IntersectionObserverService]
 })
 export class TemplateDirectivesModule { }
