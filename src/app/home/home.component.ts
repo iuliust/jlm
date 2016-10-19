@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'jlm-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  template: `<p>home works. component de la page d'accueil</p>`,
+  styles: [``]
 })
 export class HomeComponent implements OnInit {
 

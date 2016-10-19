@@ -1,1 +1,29 @@
-<div #include></div>
+<h1 class="chapitre--titre" [innerHTML]="chapitre?.titre">
+</h1>
+
+<article class="avant-propos">
+	<p class="citation-auteur">
+		Jean-Luc Mélenchon :
+	</p>
+	<blockquote>
+		<p *ngFor="let paragraphe of chapitre?.introduction" [innerHTML]="paragraphe">
+		</p>
+	</blockquote>
+</article>
+
+<article class="section" *ngFor="let section of chapitre?.sections">
+	<h2 class="titre-section" [innerHTML]="section?.titre">
+	</h2>
+	<p [innerHTML]="section?.introduction">
+	</p>
+	<ol>
+		<li *ngFor="let mesure of section?.mesures">
+			<p [innerHTML]="mesure.texte"></p>
+			<ul *ngIf="mesure?.mesures">
+				<li *ngFor="let sousMesure of mesure?.mesures">
+					<p [innerHTML]="sousMesure.texte"></p>
+				</li>
+			</ul>
+		</li>
+	</ol>
+</article>
