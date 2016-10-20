@@ -43,7 +43,7 @@ article.section {
 		font-weight: normal;
 	}
 
-	p {
+	& > p {
 		text-align: justify;
 		font-style: italic;
 		margin-bottom: 1em;

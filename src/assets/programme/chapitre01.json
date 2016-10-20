@@ -36,18 +36,7 @@
 				},
 				{
 					"texte": "Le projet de Constitution proposé par l’Assemblée constituante sera soumis à un
-					référendum d’approbation",
-					"mesures": [
-						{
-							"texte": "manger plus de frites"
-						},
-						{
-							"texte": "manger moins de protéines carnées"
-						},
-						{
-							"texte": "manger plus de quinoa"
-						}
-					]
+					référendum d’approbation"
 				}
 			]
 		},
@@ -601,11 +590,136 @@
 			]
 		},
 		{
-			"titre": "",
-			"introduction": "",
+			"titre": "Reconnaître la citoyenneté dans l’entreprise et des droits nouveaux aux salariés",
+			"introduction": "Comme le disait Jean Jaurès, «&nbsp;la grande Révolution a rendu les Français rois dans la cité et les a laissés serfs
+		dans l’entreprise&nbsp;». Le contrat de travail étant le seul contrat de subordination dans notre pays, il est temps
+		de faire rentrer la citoyenneté dans l’entreprise.",
 			"mesures": [
 				{
-					"texte": ""
+					"texte": "Accorder de nouveaux droits de contrôle aux comités d'entreprise sur les finances de leur
+			entreprise"
+				},
+				{
+					"texte": "Instaurer le droit pour les salariés à un vote de défiance à l’égard des dirigeants
+			d’entreprises ou des projets stratégiques"
+				},
+				{
+					"texte": "Renforcer le pouvoir d’intervention des salariés contre les licenciements économiques
+			par un droit de veto suspensif des comités d’entreprises, réformer les tribunaux de
+			commerce et les procédures de sauvegarde et liquidation pour donner plus de pouvoirs aux
+			salariés et à leurs représentants, refondre la procédure judiciaire de contestation des
+			licenciements économiques pour qu’ils ne puissent être effectifs avant épuisement des
+			recours"
+				}
+			]
+		},
+		{
+			"titre": "L’égalité réelle pour les Outre-mer",
+			"introduction": "Les Outre-mer sont la chance de la France. Ils pourraient être des pointes avancées de la planification
+		écologique et du progrès humain, avancer vers un développement endogène. Au lieu de quoi, ils sont
+		maintenus dans la dépendance d’un système inégalitaire d’économie de comptoir et de pauvreté de masse.
+		La République doit vivre partout et pour tous !",
+			"mesures": [
+				{
+					"texte": "Faire vivre la République, l’égalité, le métissage et le droit du sol contre le racisme et
+			l'ethnicisme :",
+					"mesures": [
+						{
+							"texte": "Assurer la tenue démocratique du référendum d’autodétermination prévue en
+					Nouvelle-Calédonie en 2018."
+						},
+						{
+							"texte": "Étendre la laïcité dans les Outre-mer, en appliquant la loi de 1905 là où elle ne l'est
+					pas"
+						},
+						{
+							"texte": "Soutenir l'enseignement des langues et cultures d'Outre-mer pour ceux qui en font la
+					demande et mettre en valeur avec les populations la diversité des patrimoines
+					culturels et linguistiques qu'apportent les Outre-mer"
+						}
+					]
+				},
+				{
+					"texte": "Faire des Outre-mer des territoires pilotes de la planification écologique",
+					"mesures": [
+						{
+							"texte": "Élaborer et mettre en œuvre un plan d’autonomie énergétique de chaque territoire
+					d’Outre-mer à partir des énergies renouvelables disponibles, terrestres (géothermie,
+					solaire, éolien) et marines (éolien, utilisant les différences de températures,
+					géothermie,...)"
+						},
+						{
+							"texte": "Faire des Outre-mer des territoires pilotes de l’économie de la mer, doter chacun
+					d’eux d’au moins un lycée professionnel maritime et des formations supérieures
+					nécessaires à ce développement"
+						},
+						{
+							"texte": "Préserver les trésors de biodiversité des Outre-mer (renforcer les moyens d’études et
+					de protection)"
+						}
+					]
+				},
+				{
+					"texte": "Assurer l’égalité et la présence de l’État",
+					"mesures": [
+						{
+							"texte": "Garantir la continuité territoriale (desserte de service public à tarifs réglementés),
+					l’interconnexion régionale et le désenclavement intra-territorial (Guyane notamment)"
+						},
+						{
+							"texte": "Engager un plan pluriannuel d’investissement et de développement des services
+					publics (transports, éducation, santé, logement, culture)"
+						},
+						{
+							"texte": "Supprimer les exemptions fiscales bénéficiant aux ultra-riches pour les
+					investissements Outre-mer (notamment sur l’ISF)"
+						}
+					]
+				},
+				{
+					"texte": "Favoriser un développement endogène en rupture avec le modèle actuel d’économie de
+			comptoir",
+					"mesures": [
+						{
+							"texte": "Libérer les Outre-mer des monopoles privés et de la captation de la richesse par la
+					rente en développant des circuits de distribution publics et la production en
+					coopératives"
+						},
+						{
+							"texte": "Protéger les économies locales par un bouclier douanier : préserver l’octroi de mer et
+					renforcer la protection commerciale des productions locales (taxe kilométrique pour
+					promouvoir les productions locales, privilégier les importations à faible empreinte
+					écologique, préférence commerciale pour les produits d'Outre-mer en métropole et
+					en Europe, partenariats commerciaux équilibrés avec les voisins régionaux)"
+						},
+						{
+							"texte": "Atteindre l’autosuffisance alimentaire en soutenant le développement d’une
+					agriculture paysanne et des filières de transformation agro-alimentaire locales"
+						}
+					]
+				},
+				{
+					"texte": "Faire des Outre-mer des leviers d’alternative à l’échelle mondiale",
+					"mesures": [
+						{
+							"texte": "Faire des Outre-mer des pôles régionaux de co-développement : transfert de
+					technologie auprès des pays voisins, aide logistique et scientifique, investir dans des
+					établissements de formation de haut niveau (santé) bénéficiant à la fois aux étudiants
+					ultra-marins et à ceux des pays voisins"
+						},
+						{
+							"texte": "Rejoindre les coopérations régionales dans une démarche de co-développement
+					écologique et social et de progrès humain : par exemple l’ALBA (Alliance
+					bolivarienne pour les peuples de notre Amérique) pour les Antilles et la Guyane
+					française, l’Afrique australe pour Mayotte et La Réunion..."
+						},
+						{
+							"texte": "Construire des points d'appui des combats écologiques d'intérêt universel : appui à la
+					préservation des forêts (Guyane pour l'Amazonie); appui aux populations du
+					Pacifique et de l’Océan indien menacées par la montée des eaux; défense des fonds
+					marins contre la prédation pétrolière et la pêche industrielle"
+						}
+					]
 				}
 			]
 		}
