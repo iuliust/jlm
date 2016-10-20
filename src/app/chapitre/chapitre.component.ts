@@ -26,7 +26,6 @@ export class ChapitreComponent implements OnInit {
 			.toPromise()
 			.then((res: Response) => {
 				const pure = (res.text().replace(/[\n\t]+/g, ' '));
-				console.log(pure);
 				const json = JSON.parse(pure);
 				this.chapitre = json;
 			})
