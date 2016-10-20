@@ -1,7 +1,6 @@
 import {
 	Component,
-	OnInit,
-	ViewEncapsulation
+	OnInit
 } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { ActivatedRoute, Params } from '@angular/router';
@@ -26,7 +25,10 @@ export class ChapitreComponent implements OnInit {
 			this.http.get(`/assets/programme/chapitre0${chapitreId}.json`)
 			.toPromise()
 			.then((res: Response) => {
-				this.chapitre = JSON.parse(res.text().replace(/[\n\t]+/g, ' '));
+				const pure = (res.text().replace(/[\n\t]+/g, ' '));
+				console.log(pure);
+				const json = JSON.parse(pure);
+				this.chapitre = json;
 			})
 		});
 	}

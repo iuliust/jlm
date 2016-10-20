@@ -1,5 +1,3 @@
-
-
 {
 	"titre": "Chapitre 1 : Face à la crise démocratique, convoquer l’assemblée constituante de la
 	6<sup class=\"eme\">ème</sup> République",
@@ -14,7 +12,8 @@
 		sitôt que la nouvelle Constitution aura été adoptée par le peuple français. La 6<sup class=\"eme\">ème</sup>
 		République commencera et ce sera une refondation de la France elle-même."
 	],
-	"sections": [{
+	"sections": [
+		{
 			"titre": "Réunir une assemblée constituante chargée de rédiger une nouvelle Constitution",
 			"introduction": "La nouvelle Constitution dont la France a besoin doit être radicalement nouvelle, y compris dans sa méthode
 			d’écriture : elle ne peut être un simple rafistolage de la V<sup class=\"eme\">ème</sup> République, ni se résumer à quelques réformes
@@ -23,26 +22,592 @@
 			spécifiquement chargée de rédiger une nouvelle Constitution sous le contrôle des citoyen-­ne­‐s : une
 			Assemblée constituante. Nous soumettrons à ses travaux des propositions pour une 6<sup class=\"eme\">ème</sup> République
 			démocratique, égalitaire, instituant de nouveaux droits et imposant l'impératif écologique.",
-			"mesures": [{
-				"texte": "Convoquer un référendum (article 11 de la Constitution) pour engager le processus
-				constituant (modalités de la composition de l’Assemblée constituante – mode de scrutin,
-				parité, tirage au sort et incompatibilités ; modalités de la délibération ; association des
-				citoyen-ne-s aux travaux...)"
-			}, {
-				"texte": "Aucun parlementaire des anciennes assemblées de la V<sup class=\"eme\">ème</sup> République ne pourra siéger
-				dans cette assemblée constituante. Les délégué-e-s à l’Assemblée constituante ne pourront
-				être candidat-e-s aux élections suivant l’entrée en vigueur de la nouvelle Constitution"
-			}, {
-				"texte": "Le projet de Constitution proposé par l’Assemblée constituante sera soumis à un
-				référendum d’approbation",
-				"mesures": [{
-					"texte": "manger plus de frites"
-				}, {
-					"texte": "manger moins de protéines carnées"
-				}, {
-					"texte": "manger plus de quinoa"
-					}]
-			}]
+			"mesures": [
+				{
+					"texte": "Convoquer un référendum (article 11 de la Constitution) pour engager le processus
+					constituant (modalités de la composition de l’Assemblée constituante – mode de scrutin,
+					parité, tirage au sort et incompatibilités ; modalités de la délibération ; association des
+					citoyen-ne-s aux travaux...)"
+				},
+				{
+					"texte": "Aucun parlementaire des anciennes assemblées de la V<sup class=\"eme\">ème</sup> République ne pourra siéger
+					dans cette assemblée constituante. Les délégué-e-s à l’Assemblée constituante ne pourront
+					être candidat-e-s aux élections suivant l’entrée en vigueur de la nouvelle Constitution"
+				},
+				{
+					"texte": "Le projet de Constitution proposé par l’Assemblée constituante sera soumis à un
+					référendum d’approbation",
+					"mesures": [
+						{
+							"texte": "manger plus de frites"
+						},
+						{
+							"texte": "manger moins de protéines carnées"
+						},
+						{
+							"texte": "manger plus de quinoa"
+						}
+					]
+				}
+			]
+		},
+		{
+			"titre": "Balayer l’oligarchie, abolir les privilèges de la caste",
+			"introduction": "La démocratie française est malade des privilèges, de l’argent-­roi et de la collusion entre politique et
+			finance. Une caste de privilégiés, coupée des réalités de la vie du peuple a confisqué le pouvoir. Cela doit
+			cesser : la vertu doit être au centre de l’action politique.",
+			"mesures": [
+				{
+					"texte": "Rendre inéligible à vie toute personne condamnée pour corruption"
+				},
+				{
+					"texte": "Supprimer le monopole du déclenchement de poursuites judiciaires par l’administration
+					fiscale en cas de fraude : la justice doit pouvoir enquêter librement et de sa propre initiative
+					même contre l’avis du ministre"
+				},
+				{
+					"texte": "Combattre la pollution du débat parlementaire par les lobbies, interdire l’entrée des
+					lobbyistes dans l’enceinte du Parlement et les cadeaux faits aux parlementaires"
+				},
+				{
+					"texte": "Mettre fin au pantouflage : tout haut fonctionnaire souhaitant travailler dans le privé
+					devra démissionner de la fonction publique et rembourser le prix de sa formation s’il n’a pas
+					servi au moins dix ans, supprimer le concours externe de l’ENA pour toute personne n’ayant
+					jamais travaillé. Durcir les règles contre les conflits d’intérêts, allonger les périodes
+					d’interdiction d’exercer une fonction privée après avoir exercé une activité publique dans le
+					même secteur"
+				},
+				{
+					"texte": "Appliquer les recommandations d’Anticor et Transparency International visant à
+					empêcher la corruption et rapprocher les représentant-e-s des représenté-e-s, notamment
+					obliger un élu à rendre publique sa déclaration de patrimoine transmise à la HATVP et
+					supprimer la réserve parlementaire."
+				},
+				{
+					"texte": "Mettre fin à l’usurpation par le MEDEF de la parole des chefs d’entreprise : fonder la
+					représentativité des organisations patronale sur la base d’élections, comme c’est déjà le cas
+					pour les syndicats de salariés"
+				}
+			]
+		},
+		{
+			"titre": "Une République permettant l’intervention populaire",
+			"introduction": "Le peuple est systématiquement tenu à l’écart des décisions. Tout au plus a­‐t­‐il le droit de voter une fois tous
+			les cinq ans sans possibilité d’intervenir ensuite. Il est temps de faire confiance aux citoyen‐ne‐s et de
+			permettre le débat et l’expression de la souveraineté populaire en toutes circonstances.",
+			"mesures": [
+				{
+					"texte": "Le peuple est systématiquement tenu à l’écart des décisions. Tout au plus a­‐t­‐il le droit de voter une fois tous
+					les cinq ans sans possibilité d’intervenir ensuite. Il est temps de faire confiance aux citoyen‐ne‐s et de
+					permettre le débat et l’expression de la souveraineté populaire en toutes circonstances."
+				},
+				{
+					"texte": "Créer un droit de révoquer un-e élu-e en cours de mandat sur demande d’une partie du
+					corps électoral"
+				},
+				{
+					"texte": "Instaurer le référendum d’initiative citoyenne et le droit des citoyens de proposer une loi"
+				},
+				{
+					"texte": "Rendre obligatoire le recours au référendum pour réviser la Constitution ou ratifier tout
+					nouveau traité européen et garantir le respect de la décision populaire"
+				},
+				{
+					"texte": "Reconnaître le droit de vote aux élections locales pour les résidents étrangers en situation
+					régulière comme en bénéficient déjà les ressortissants des pays de l’Union européenne"
+				},
+				{
+					"texte": "Rendre effectif le principe du non-cumul des mandats, y compris dans le temps et
+					abroger la loi NOTRe : contre les nouvelles féodalités et l’éloignement du pouvoir des
+					citoyens, refonder l’organisation territoriale de la République et défendre les libertés
+					communales"
+				},
+				{
+					"texte": "Démocratiser l’accès aux responsabilités politiques en permettant à chacun-e de prendre
+					un «&nbsp;congé républicain&nbsp;», sans risque pour son emploi ou ses droits quels qu'ils soient, en
+					vue de se présenter à des élections"
+				}
+			]
+		},
+		{
+			"titre": "Abolir la monarchie présidentielle",
+			"introduction": "La monarchie présidentielle actuelle marginalise le Parlement. Le Président peut dissoudre l’Assemblée mais
+		celle-­ci ne peut le renverser. Conséquence : les députés agissent plus souvent comme des godillots, obligés
+		du monarque, que comme représentants du peuple souverain. Ce système est une anomalie démocratique.",
+			"mesures": [
+				{
+					"texte": "Abolir la monarchie présidentielle en instaurant un régime parlementaire stable dans
+			lequel le Gouvernement détient le pouvoir exécutif et est responsable devant le Parlement,
+			transférer le pouvoir de nomination au Parlement"
+				},
+				{
+					"texte": "Élire l’Assemblée nationale à la proportionnelle"
+				},
+				{
+					"texte": "Supprimer le Sénat et le Conseil économique, social et environnemental et créer une
+			assemblée de l’intervention populaire et du long terme émettant un avis sur l’impact
+			écologique et social des lois"
+				},
+				{
+					"texte": "Supprimer la Cour de Justice de la République et soumettre les membres du
+			Gouvernement à la justice ordinaire"
+				}
+			]
+		},
+		{
+			"titre": "Une nouvelle étape des libertés et de l’émancipation personnelles",
+			"introduction": "Une Constitution, c’est la garantie pour le peuple des droits et libertés qu’il se reconnaît lui-­même. La 6<sup class=\"eme\">ème</sup>
+		République sera l’occasion de consacrer de nouveaux droits civils et politiques mais aussi personnels, pour
+		une nouvelle étape de l’émancipation humaine.",
+			"mesures": [
+				{
+					"texte": "Constitutionnaliser la non marchandisation du corps humain et le droit fondamental de
+			disposer de soi en toutes circonstances : liberté de conscience, droit à la contraception et à
+			l'interruption volontaire de grossesse, droit de mourir dans la dignité (y compris avec
+			assistance), accès garanti à des soins palliatifs"
+				},
+				{
+					"texte": "Autoriser le changement d’état-civil libre et gratuit devant un officier d’état-civil
+Établir la filiation par reconnaissance comme principe par défaut, reconnaître le droit à la
+			procréation médicalement assistée (PMA) pour toutes les femmes et refuser la gestation
+			pour autrui (GPA), faire prévaloir l’intérêt supérieur de l’enfant en toute circonstance"
+				},
+				{
+					"texte": "Autoriser le changement d’état-civil libre et gratuit devant un officier d’état-civil
+Établir la filiation par reconnaissance comme principe par défaut, reconnaître le droit à la
+			procréation médicalement assistée (PMA) pour toutes les femmes et refuser la gestation
+			pour autrui (GPA), faire prévaloir l’intérêt supérieur de l’enfant en toute circonstance"
+				}
+			]
+		},
+		{
+			"titre": "Une République universelle",
+			"introduction": "Aucune liberté n’est possible sans l’égalité entre les personnes. Assez tergiversé ! Imposons l’égalité des
+		droits ! Punissons ceux qui veulent s'y soustraire. Faisons progresser ensemble l’égalité en droits et en faits
+		dans tous les domaines.",
+			"mesures": [
+				{
+					"texte": "Faire France de tout bois :",
+					"mesures": [
+						{
+							"texte": "Défendre le droit du sol intégral pour les enfants nés en France y compris dans les
+							Outre-mer"
+						},
+						{
+							"texte": "Faciliter l’accès à la nationalité française pour les personnes étrangères présentes
+							légalement sur le territoire"
+						},
+						{
+							"texte": "Rétablir la carte de séjour de dix ans comme titre de séjour de référence"
+						}
+					]
+				},
+				{
+					"texte": "Abolir les ségrégations et lutter contre toutes les formes de racisme :",
+					"mesures": [
+						{
+							"texte": "Introduire le récépissé de contrôle d’identité pour interdire le contrôle au faciès"
+						},
+						{
+							"texte": "Assurer l’égalité réelle et combattre les discriminations fondées sur le genre, le
+					handicap, l’apparence, la couleur de peau, l’âge, l'orientation sexuelle, la religion ou
+					la croyance, l’origine sociale ou la fortune"
+						}
+					]
+				},
+				{
+					"texte": "Abolir le patriarcat dans l'État et la société :",
+					"mesures": [
+						{
+							"texte": "Imposer l'égalité de conditions entre les femmes et les hommes dans les institutions
+					politiques, administratives, économiques, syndicales et associatives"
+						},
+						{
+							"texte": "Renforcer la loi et les moyens contre les violences faites aux femmes et généraliser
+					le planning familial dans ses missions de formation et d’éducation pour la
+					contraception et le droit à l’avortement"
+						},
+						{
+							"texte": "Adopter une loi de lutte contre le sexisme"
+						},
+						{
+							"texte": "Abolir la prostitution et garantir la dignité de la personne humaine"
+						}
+					]
+				},
+				{
+					"texte": "Assurer l’égalité de toutes les familles, de tous les enfants et des couples mariés et pacsés
+			(en matière de succession, funérailles, pensions de réversion, etc.), ouvrir l’adoption plénière
+			conjointe à tous les couples, mariés ou non"
+				}
+			]
+		},
+		{
+			"titre": "Une République laïque",
+			"introduction": "La laïcité est attaquée de toutes parts et instrumentalisée par ses adversaires historiques, intégristes
+		religieux et racistes, qui veulent aussi en faire un prétexte pour flétrir les musulmans. La laïcité est la
+		condition de la liberté de conscience de chacun, de l’égalité entre tous les citoyens quelle que soit leur
+		option philosophique ou spirituelle, et de la fraternité. Elle rend possible une action de l’État au service de
+		l’intérêt général.",
+			"mesures": [
+				{
+					"texte": "Étendre le bénéfice de l'application de la loi de 1905 à tout le territoire de la République
+			(abroger le concordat d’Alsace-Moselle et les divers statuts spécifiques en vigueur dans les
+			Outre-mer)"
+				},
+				{
+					"texte": "Garantir la liberté de conscience et l’égalité de toutes les options spirituelles devant la loi"
+				},
+				{
+					"texte": "Combattre tous les communautarismes et l’usage politique des religions"
+				},
+				{
+					"texte": "Refuser les financements publics pour la construction des édifices religieux, des activités
+			cultuelles et des établissements confessionnels"
+				},
+				{
+					"texte": "Refuser de rencontrer d’État à État ceux qui obligent nos ministres femmes à porter des
+			accoutrements contraires à la dignité républicaine"
+				},
+				{
+					"texte": "Interdire la présence de ministres et préfet-te-s aux cérémonies religieuses et refuser le
+			titre de «&nbsp;chanoine de Latran&nbsp;» pour la Présidence de la République"
+				}
+			]
+		},
+		{
+			"titre": "La révolution citoyenne dans les médias",
+			"introduction": "Il n’y a pas de démocratie possible sans information libre et pluraliste. Nos médias sont bien malades : de
+		l’argent, de la recherche du sensationnalisme et de la tyrannie du buzz. La révolution citoyenne doit être
+		menée sans faiblesse dans les médias !",
+			"mesures": [
+				{
+					"texte": "Faire élire les président-e-s de France Télévision et Radio France par le Parlement"
+				},
+				{
+					"texte": "Adopter une loi anti-concentration des médias, protégeant le secteur des intérêts
+			financiers, favorisant la transformation des médias en coopératives de salariés et de
+			lecteurs/auditeurs/téléspectateurs et attribuer des fréquences aux médias locaux et associatifs"
+				},
+				{
+					"texte": "Combattre la «&nbsp;sondocratie&nbsp;» : interdire les sondages dans les jours précédant les élections
+			et adopter la proposition de loi sur les sondages votée à l’unanimité par le Sénat en 2011 et
+			enterrée depuis"
+				},
+				{
+					"texte": "Créer un «&nbsp;Conseil national des médias&nbsp;» à la place du Conseil supérieur de l’audiovisuel
+			pour en faire un véritable contre-pouvoir citoyen garantissant le pluralisme des opinions et
+			des supports ainsi que la qualité de tous les médias"
+				},
+				{
+					"texte": "Refonder les aides publiques à la presse pour les réserver aux médias d’information et
+			mutualiser les outils de production (imprimeries, serveurs, distribution, etc.)"
+				},
+				{
+					"texte": "Protéger les sources et l’indépendance des rédactions à l’égard des pouvoirs
+			économiques et politiques par le renforcement du statut juridique des rédactions et une
+			charte déontologique dans la convention collective"
+				}
+			]
+		},
+		{
+			"titre": "La République garante des biens communs",
+			"introduction": "La République est un mot creux si elle ignore les conditions concrètes de la vie des gens. Elle ne peut qu’être
+		sociale. Mais l'impératif écologique exige aussi davantage de République et une République d’un genre
+		nouveau. Le changement climatique menace l’existence de la vie humaine sur la planète. Tous semblables,
+		nous sommes liés par un intérêt général humain : conserver la biosphère qui rend possible la vie humaine. Il
+		est temps que la République soit écologiste.",
+			"mesures": [
+				{
+					"texte": "Constitutionnaliser la règle verte : ne pas prélever sur la nature davantage que ce qu’elle
+			peut reconstituer, ni produire plus que ce qu’elle peut supporter"
+				},
+				{
+					"texte": "Protéger les biens communs : l’air, l’eau, l’alimentation, le vivant, la santé, l’énergie, la
+			monnaie ne sont pas des marchandises. Ils doivent être gérés démocratiquement : le droit de
+			propriété doit être soumis à l’intérêt général, la propriété commune protégée et les services
+			publics développés"
+				},
+				{
+					"texte": "Constitutionnaliser et rendre effectifs les droits au travail et au logement"
+				},
+				{
+					"texte": "Amnistier les syndicalistes et militants associatifs condamnés pour faits de luttes sociales,
+			écologiques ou pour la défense des libertés, protéger les lanceur-se-s d’alerte et investir les
+			salarié-e-s d'une mission d'alerte sociale et environnementale"
+				}
+			]
+		},
+		{
+			"titre": "Une justice au nom du peuple",
+			"introduction": "La justice est rendue «&nbsp;au nom du peuple français&nbsp;». Mais trop souvent, le service public de la justice ne peut
+		assumer cette lourde tâche. Les tribunaux sont en voie de «&nbsp;clochardisation&nbsp;», les moyens humains et
+		financiers manquent pour assurer des délais raisonnables ; les justiciables comme les professionnel­‐le-s de la
+		justice sont en droit d’exiger un effort sans précédent.",
+			"mesures": [
+				{
+					"texte": "Garantir la protection judiciaire de la jeunesse, la justice des mineurs, la politique de
+			prévention de la délinquance et les sanctions éducatives"
+				},
+				{
+					"texte": "Mettre fin à la paupérisation de la justice et de l’administration pénitentiaire :",
+					"mesures": [
+						{
+							"texte": "Mettre en œuvre un plan de recrutement de personnels pour désengorger les tribunaux"
+						},
+						{
+							"texte": "Rénover et construire de nouveaux locaux pour les tribunaux"
+						},
+						{
+							"texte": "Recruter 2000 agents pénitentiaires pour les escortes des détenus"
+						},
+						{
+							"texte": "Mettre fin au tout carcéral par des peines alternatives à la prison et rénover les prisons
+					pour garantir la dignité humaine"
+						}
+					]
+				},
+				{
+					"texte": "Remplacer les instructions ministérielles au Parquet par des lois d’orientation de politique
+			pénale débattues et votées par le Parlement"
+				},
+				{
+					"texte": "Remplacer le Conseil supérieur de la magistrature par un Conseil supérieur de la Justice
+			désigné pour partie par les magistrat-e-s et le Parlement, devant lequel il sera responsable"
+				},
+				{
+					"texte": "Réformer le dualisme juridictionnel en supprimant la fonction juridictionnelle du Conseil
+			d'État et en créant une juridiction suprême commune aux deux ordres de juridictions
+			(fusionnant la Cour de Cassation et la fonction juridictionnelle du Conseil d’État)"
+				}
+			]
+		},
+		{
+			"titre": "Une politique antiterroriste rationnelle",
+			"introduction": "La sûreté est un des droits «&nbsp;naturels et imprescriptibles&nbsp;» de l’être humain selon la Déclaration des droits de
+		l’Homme et du citoyen de 1789. Les odieux attentats commis en France en 2015 et 2016 interrogent :
+		comment protéger la population de meurtres terroristes ? Comment garantir notre liberté dans ce
+		contexte ? En la matière, la surenchère sécuritaire ne protège pas, elle affaiblit et fait le jeu des assaillants.
+		C’est une toute autre politique et une stratégie globale qui sont nécessaires pour vivre en paix.",
+			"mesures": [
+				{
+					"texte": "Refuser la logique du choc des civilisations et de la «&nbsp;guerre intérieure&nbsp;» et sortir des
+			guerres déstabilisatrices et des alliances hypocrites avec les pétro-monarchies du Golfe"
+				},
+				{
+					"texte": "Améliorer la prévention en engageant une stratégie politique pour renforcer les anticorps
+			républicains et supprimer le terreau des communautarismes par plus de République, de
+			laïcité, d’éducation, de justice sociale et d’implication citoyenne"
+				},
+				{
+					"texte": "Refuser la logique de l’exception pour réaffirmer l’État de droit :",
+					"mesures": [
+						{
+							"texte": "Permettre la sortie de l’état d’urgence à l’initiative du Parlement, état qui ne protège
+					pas mieux"
+						},
+						{
+							"texte": "Faire l’évaluation des lois antiterroristes sécuritaires existantes"
+						},
+						{
+							"texte": "Arrêter progressivement les opérations «&nbsp;Sentinelle&nbsp;» pour confier la sécurité des
+					lieux publics à la Police"
+						},
+						{
+							"texte": "Garantir le contrôle par le juge judiciaire des opérations de lutte contre le terrorisme et augmenter les moyens de la justice anti-terroriste pour garantir une lutte efficace,
+					durable et respectueuse des droits et libertés fondamentaux"
+						}
+					]
+				},
+				{
+					"texte": "Renforcer le renseignement territorial et humain en revenant sur la fusion de la direction
+			de la surveillance du territoire (DST) et des renseignements généraux (RG), en privilégiant
+			l’infiltration par rapport au tout technologique, en renforçant les moyens d’analyses des
+			renseignements collectés et imposer aux autorités chargées du renseignement de rendre
+			comptes devant une commission parlementaire permanente"
+				},
+				{
+					"texte": "Lutter contre l’embrigadement et soutenir les démarches de signalement par les proches
+			et les programmes de prise en charge des personnes suspectées"
+				},
+				{
+					"texte": "Instaurer une peine de déchéance des droits civiques en cas de fraude fiscale ou
+			d’activités illicites permettant le financement d’activités terroristes, punir les financements
+			des trafics alimentant les réseaux terroristes et réquisitionner les entreprises qui collaborent
+			avec les agresseurs"
+				}
+			]
+		},
+		{
+			"titre": "Garantir la sécurité et la sûreté intérieures",
+			"introduction": "La République a besoin d’une justice. Elle a aussi besoin d’une police; une police républicaine, agissant pour
+		protéger les libertés individuelles et collectives. La politique de sécurité doit être refondée en lien avec la
+		population, par l'intégration des conscrits, loin des coups de mentons et du «&nbsp;deux poids deux mesures&nbsp;».
+		Objectif : une politique de sûreté publique commençant par le renforcement de la sécurité sociale et des
+		services publics.",
+			"mesures": [
+				{
+					"texte": "Refonder la politique de sûreté publique sur la base du triptyque «&nbsp;prévention,
+			dissuasion, sanction&nbsp;» et y ajouter l’implication citoyenne et resocialisation des détenus, et
+			réaffirmer son caractère national :",
+					"mesures": [
+						{
+							"texte": "En finir avec la politique du chiffre et supprimer les primes aux résultats dont les
+					montants seront redistribués progressivement aux différentes catégories d’agents"
+						},
+						{
+							"texte": "Réhabiliter la police de proximité en refondant les objectifs des polices municipales et
+					affirmant la distinction entre les missions nationales et locales"
+						},
+						{
+							"texte": "Démanteler les BAC (Brigades Anti-criminalité) qui ne font que du flagrant délit et ne
+					permettent pas d'assurer une bonne relation police/population"
+						},
+						{
+							"texte": "Intégrer au service public certaines fonctions de sécurité aujourd’hui privatisées (sécurité
+					aéroportuaire notamment)"
+						}
+					]
+				},
+				{
+					"texte": "Faire la police républicaine :",
+					"mesures": [
+						{
+							"texte": "En finir avec la police et la justice à deux vitesses en augmentant nettement les effectifs
+					de police en charge de la délinquance en col blanc en lien avec le fisc, les douanes et la
+					justice financière"
+						},
+						{
+							"texte": "Donner la priorité au démantèlement des trafics (drogues, armes, prostitution, êtres
+					humains...) et à la lutte contre la délinquance financière, la corruption et le terrorisme"
+						},
+						{
+							"texte": "ésencombrer l’action policière par la contraventionnalisation de la consommation de
+					stupéfiants et la légalisation de l’usage du cannabis"
+						},
+						{
+							"texte": "Faire évaluer la police avec des questionnaires de satisfaction des usagers"
+						},
+						{
+							"texte": "Apaiser les conflits existant au sein de la police par des instances de dialogue internes,
+					améliorer l'accueil du public et diminuer le temps d'attente pour la prise en compte d'une
+					plainte ainsi que les durées d'investigation ensuite"
+						},
+						{
+							"texte": "Abroger les lois sécuritaires inefficaces et renforcer les politiques de prévention"
+						},
+						{
+							"texte": "Réécrire le code de déontologie et y insister lors de la formation des forces de police et
+					rétablir les missions de «&nbsp;défense des Libertés et de la République&nbsp;» supprimées par
+					Manuel Valls en 2014"
+						},
+						{
+							"texte": "Interdire les tasers et flash-balls ainsi que les grenades de désencerclement pour
+					favoriser la désescalade des affrontements"
+						}
+					]
+				},
+				{
+					"texte": "Renforcer les moyens humains et matériels des forces de sécurité, en quantité et qualité :",
+					"mesures": [
+						{
+							"texte": "Mettre en place un plan d’amélioration qualitative de la police et gendarmerie :",
+							"mesures": [
+								{
+									"texte": "Recruter des agents administratifs pour libérer policiers et gendarmes aptes à aller
+							sur le terrain qui travaillent sur des postes administratifs"
+								},
+								{
+									"texte": "Ramener les effectifs de policiers et gendarmes à ceux de 2007"
+								},
+								{
+									"texte": "Doubler les effectifs de la police technique et scientifique"
+								},
+								{
+									"texte": "Supprimer le statut précaire et peu qualifié des 11000 adjoint-e-s de sécurité en
+							permettant la formation et la titularisation de celles et ceux qui le souhaitent"
+								},
+								{
+									"texte": "Porter à deux ans la durée de formation des élèves gardiens de la paix"
+								}
+							]
+						},
+						{
+							"texte": "Lancer un plan de rénovation et de construction de commissariats de police pour lutter
+					contre la «&nbsp;clochardisation&nbsp;» du bâti et l’abandon de certains territoires"
+						},
+						{
+							"texte": "Dotation des services en moyens techniques et matériels suffisants, renouvellement
+					général du parc informatique sous contrainte de sécurité des échanges"
+						}
+					]
+				}
+			]
+		},
+		{
+			"titre": "La jeunesse au service de l’intérêt général et de la sûreté de la Nation : créer un service citoyen obligatoire et une garde nationale",
+			"introduction": "Aujourd’hui, de nombreuses tâches indispensables à la sûreté et à l’intégrité de la Nation ne sont pas
+		assurées. C’est vrai aussi bien du point de vue de la Défense et de la sûreté que de l’intégrité écologique, de
+		la solidarité et du secours à la population. Ces préoccupations ne peuvent être abandonnées aux marchands
+		ni aux seuls agents des services concernés. C’est la Nation tout entière qui doit y faire face, pour les tâches
+		civiles comme militaires.",
+			"mesures": [
+				{
+					"texte": "Créer un service citoyen obligatoire :",
+					"mesures": [
+						{
+							"texte": "Pour les femmes et pour les hommes"
+						},
+						{
+							"texte": "Par conscription avant 25 ans, proche du lieu de vie, en limitant le «&nbsp;casernement&nbsp;»
+					aux fonctions qui l’exigent réellement"
+						},
+						{
+							"texte": "D’une durée totale de neuf mois, comprenant une formation militaire initiale incluant
+					un droit à l’objection de conscience"
+						},
+						{
+							"texte": "Rémunéré au smic"
+						},
+						{
+							"texte": "Affecté à des tâches d’intérêt général : secours à la population, sapeurs-pompiers,
+					sécurité publique, défense, sécurité civile, protection et réparation de
+					l’environnement, appui à des associations labellisées d’intérêt général"
+						},
+						{
+							"texte": "Présence sur tout le territoire, y compris les Outre-mer, les zones rurales et les
+					quartiers populaires"
+						},
+						{
+							"texte": "Comprenant un bilan de santé, une évaluation des capacités d’écriture, lecture et
+					calcul avec leur éventuelle mise à niveau, la formation gratuite à la conduite et
+					l’examen du permis de conduire"
+						}
+					]
+				},
+				{
+					"texte": "Créer une garde nationale placée sous commandement civil et composée",
+					"mesures": [
+						{
+							"texte": "Des jeunes en service citoyen obligatoire ayant choisi d’intégrer la réserve pour la
+					protection de la sûreté et de l’intégrité de la Nation"
+						},
+						{
+							"texte": "Des unités existantes labellisées : réserve de sécurité nationale, réserve de sécurité
+					civile, réserve citoyenne"
+						}
+					]
+				}
+			]
+		},
+		{
+			"titre": "",
+			"introduction": "",
+			"mesures": [
+				{
+					"texte": ""
+				}
+			]
 		}
 	]
 }
