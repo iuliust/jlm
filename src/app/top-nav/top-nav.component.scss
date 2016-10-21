@@ -17,16 +17,39 @@ li {
 	&.active-link {
 		color: firebrick;
 	}
+
+	a {
+		color: inherit;
+		display: block;
+		padding: .5em;
+		text-decoration: none;
+
+		&:hover {
+			background-color: lightgrey;
+			text-decoration: underline;
+		}
+
+		.chapitre-mot {
+
+		}
+	}
 }
 
-a {
-	color: inherit;
-	display: block;
-	padding: .5em;
-	text-decoration: none;
+@media (max-width: 800px) {
+	li {
+		&:not(.active-link) {
+			flex: 1 4 auto;
 
-	&:hover {
-		background-color: lightgrey;
-		text-decoration: underline;
+			.chapitre-mot {
+				display: none;
+			}
+		}
+		&.active-link {
+			flex: 4 1 auto;
+		}
 	}
+}
+
+@media (min-width: 800px) and (max-width: 1024) {
+
 }
