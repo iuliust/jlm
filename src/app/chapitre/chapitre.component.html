@@ -14,7 +14,7 @@
 <article class="section" *ngFor="let section of chapitre?.sections">
 	<h2 class="titre-section" [innerHTML]="section?.titre">
 	</h2>
-	<p [innerHTML]="section?.introduction">
+	<p class="introduction" *ngIf="section?.introduction" [innerHTML]="section?.introduction">
 	</p>
 	<ol>
 		<li *ngFor="let mesure of section?.mesures">
@@ -26,4 +26,7 @@
 			</ul>
 		</li>
 	</ol>
+	<div *ngIf="section?.outro">
+		<p *ngFor="let paragraphe of section.outro" [innerHTML]="paragraphe"></p>
+	</div>
 </article>

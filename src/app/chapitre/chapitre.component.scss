@@ -7,15 +7,18 @@
 }
 
 .avant-propos {
-	background-color: var(--secondary-background-color);
-	padding: 1em;
+	// background-color: var(--secondary-background-color);
+	background-color: var(--theme-secondary-color);
+	padding: 1.6rem;
+	font-size: 24px;
 
 	blockquote {
 		font-style: italic;
 		margin: 0;
 
 		p {
-			margin-top: 2em;
+			color: white;
+			margin-top: 2rem;
 			text-align: justify;
 
 			&:first-of-type::before {
@@ -28,19 +31,26 @@
 	}
 }
 
-sup.eme {
-	vertical-align: text-top;
-}
-
 article.section {
-	padding: 1em;
-	font-size: 1.1em;
-	background-color: white;
+	// font-family: 'Lora', serif;
+	padding: 1em 1.4em;
+	font-size: 1.3em;
+	background-color: hsl(0, 0%, 100%);
 	margin: 1em 0;
+	text-align-last: start;
+	border-width: 1px;
+	border-bottom-width: 2px;
+	border-color: hsl(0, 0%, 80%);
+	border-style: solid;
+	border-radius: 3px;
 
 	.titre-section {
 		margin: 0;
-		font-weight: normal;
+		font-weight: 400;
+	}
+
+	.introduction {
+		font-style: italic;
 	}
 
 	& > p {
@@ -50,7 +60,7 @@ article.section {
 		line-height: 1.2em;
 	}
 
-	ul {
+	ul, ol {
 		text-align: justify;
 		-webkit-padding-start: 40px;
 		-moz-padding-start: 40px;

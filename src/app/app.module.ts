@@ -12,6 +12,9 @@ import { ChapitreComponent } from './chapitre/chapitre.component';
 import { HomeComponent } from './home/home.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { EncartFiltresComponent } from './encart-filtres/encart-filtres.component';
+import { ScrollTopDirective } from './scroll-top/scroll-top.directive';
+
+import { WindowRef } from './shared';
 
 @NgModule({
 	declarations: [
@@ -19,7 +22,8 @@ import { EncartFiltresComponent } from './encart-filtres/encart-filtres.componen
 		ChapitreComponent,
 		HomeComponent,
 		TopNavComponent,
-		EncartFiltresComponent
+		EncartFiltresComponent,
+		ScrollTopDirective
 	],
 	imports: [
 		BrowserModule,
@@ -31,7 +35,7 @@ import { EncartFiltresComponent } from './encart-filtres/encart-filtres.componen
 		]),
 		TemplateDirectivesModule
 	],
-	providers: [],
+	providers: [WindowRef],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }

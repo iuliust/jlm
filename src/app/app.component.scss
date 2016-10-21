@@ -21,9 +21,13 @@ div {
 	}
 
 	aside {
-		position: sticky;
-		margin-left: 10px;
-		top: 10px;
-		align-self: flex-start;
+		flex: .1 1 150px;
+		position: relative;
+	}
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+	:host {
+		width: 100%;
 	}
 }

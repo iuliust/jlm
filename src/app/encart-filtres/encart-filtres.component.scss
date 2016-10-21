@@ -1,5 +1,21 @@
 :host {
 	background-color: var(--secondary-background-color);
 	display: block;
+	margin: 1em;
+	position: -webkit-sticky;
+	position: sticky;
 	padding: 8px 1em;
+	top: 10px;
+}
+
+[jlmScrollTop] {
+	color: hsl(190, 100%, 36%);
+	color: var(--theme-main-color);
+	cursor: pointer;
+	text-decoration: underline;
+
+	&:active {
+		color: hsl(190, 100%, 36%);
+		color: var(--theme-main-color);
+	}
 }

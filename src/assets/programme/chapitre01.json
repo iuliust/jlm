@@ -17,9 +17,9 @@
 			"titre": "Réunir une assemblée constituante chargée de rédiger une nouvelle Constitution",
 			"introduction": "La nouvelle Constitution dont la France a besoin doit être radicalement nouvelle, y compris dans sa méthode
 			d’écriture : elle ne peut être un simple rafistolage de la V<sup class=\"eme\">ème</sup> République, ni se résumer à quelques réformes
-			octroyées par le futur président de la République. C’est le peuple lui­‐même qui doit s’emparer de la question
+			octroyées par le futur président de la République. C’est le peuple lui-même qui doit s’emparer de la question
 			et s’impliquer tout au long d’un processus constituant. Nous proposons la convocation d’une assemblée
-			spécifiquement chargée de rédiger une nouvelle Constitution sous le contrôle des citoyen-­ne­‐s : une
+			spécifiquement chargée de rédiger une nouvelle Constitution sous le contrôle des citoyen-ne-s : une
 			Assemblée constituante. Nous soumettrons à ses travaux des propositions pour une 6<sup class=\"eme\">ème</sup> République
 			démocratique, égalitaire, instituant de nouveaux droits et imposant l'impératif écologique.",
 			"mesures": [
@@ -67,9 +67,9 @@
 					même secteur"
 				},
 				{
-					"texte": "Appliquer les recommandations d’Anticor et Transparency International visant à
+					"texte": "Appliquer les recommandations <i>d’Anticor</i> et <i>Transparency International</i> visant à
 					empêcher la corruption et rapprocher les représentant-e-s des représenté-e-s, notamment
-					obliger un élu à rendre publique sa déclaration de patrimoine transmise à la HATVP et
+					obliger un élu à rendre publique sa déclaration de patrimoine transmise à la <abbr title=\"Haute Autorité pour la Transparence de la Vie Publique\">HATVP</abbr> et
 					supprimer la réserve parlementaire."
 				},
 				{
@@ -81,13 +81,13 @@
 		},
 		{
 			"titre": "Une République permettant l’intervention populaire",
-			"introduction": "Le peuple est systématiquement tenu à l’écart des décisions. Tout au plus a­‐t­‐il le droit de voter une fois tous
-			les cinq ans sans possibilité d’intervenir ensuite. Il est temps de faire confiance aux citoyen‐ne‐s et de
+			"introduction": "Le peuple est systématiquement tenu à l’écart des décisions. Tout au plus a-t-il le droit de voter une fois tous
+			les cinq ans sans possibilité d’intervenir ensuite. Il est temps de faire confiance aux citoyen-ne-s et de
 			permettre le débat et l’expression de la souveraineté populaire en toutes circonstances.",
 			"mesures": [
 				{
-					"texte": "Le peuple est systématiquement tenu à l’écart des décisions. Tout au plus a­‐t­‐il le droit de voter une fois tous
-					les cinq ans sans possibilité d’intervenir ensuite. Il est temps de faire confiance aux citoyen‐ne‐s et de
+					"texte": "Le peuple est systématiquement tenu à l’écart des décisions. Tout au plus a-t-il le droit de voter une fois tous
+					les cinq ans sans possibilité d’intervenir ensuite. Il est temps de faire confiance aux citoyen-ne-s et de
 					permettre le débat et l’expression de la souveraineté populaire en toutes circonstances."
 				},
 				{
@@ -107,7 +107,7 @@
 				},
 				{
 					"texte": "Rendre effectif le principe du non-cumul des mandats, y compris dans le temps et
-					abroger la loi NOTRe : contre les nouvelles féodalités et l’éloignement du pouvoir des
+					abroger la loi <abbr title=\"Nouvelle organisation territoriale de la République\">NOTRe</abbr> : contre les nouvelles féodalités et l’éloignement du pouvoir des
 					citoyens, refonder l’organisation territoriale de la République et défendre les libertés
 					communales"
 				},
@@ -260,7 +260,7 @@
 				},
 				{
 					"texte": "Interdire la présence de ministres et préfet-te-s aux cérémonies religieuses et refuser le
-			titre de «&nbsp;chanoine de Latran&nbsp;» pour la Présidence de la République"
+			titre de <a href=\"https://fr.wikipedia.org/wiki/Basilique_Saint-Jean-de-Latran#Liens_avec_la_France\">«&nbsp;chanoine de Latran&nbsp;»</a> pour la Présidence de la République"
 				}
 			]
 		},
@@ -331,7 +331,7 @@
 			"titre": "Une justice au nom du peuple",
 			"introduction": "La justice est rendue «&nbsp;au nom du peuple français&nbsp;». Mais trop souvent, le service public de la justice ne peut
 		assumer cette lourde tâche. Les tribunaux sont en voie de «&nbsp;clochardisation&nbsp;», les moyens humains et
-		financiers manquent pour assurer des délais raisonnables ; les justiciables comme les professionnel­‐le-s de la
+		financiers manquent pour assurer des délais raisonnables ; les justiciables comme les professionnel-le-s de la
 		justice sont en droit d’exiger un effort sans précédent.",
 			"mesures": [
 				{
@@ -436,8 +436,8 @@
 		services publics.",
 			"mesures": [
 				{
-					"texte": "Refonder la politique de sûreté publique sur la base du triptyque «&nbsp;prévention,
-			dissuasion, sanction&nbsp;» et y ajouter l’implication citoyenne et resocialisation des détenus, et
+					"texte": "Refonder la politique de sûreté publique sur la base du triptyque <i>«&nbsp;prévention,
+			dissuasion, sanction&nbsp;»</i> et y ajouter l’implication citoyenne et resocialisation des détenus, et
 			réaffirmer son caractère national :",
 					"mesures": [
 						{
@@ -672,12 +672,12 @@
 						},
 						{
 							"texte": "Supprimer les exemptions fiscales bénéficiant aux ultra-riches pour les
-					investissements Outre-mer (notamment sur l’ISF)"
+					investissements Outre-mer (notamment sur l’<abbr title=\"Impôt de Solidarité sur la Fortune\">ISF</abbr>)"
 						}
 					]
 				},
 				{
-					"texte": "Favoriser un développement endogène en rupture avec le modèle actuel d’économie de
+					"texte": "Favoriser un développement <a href=\"https://fr.wiktionary.org/wiki/endog%C3%A8ne\" title=\"Se dit d’un facteur qui, engendré par un phénomène, concourt lui-même à favoriser ce phénomène. — source : Wiktionnaire\">endogène</a> en rupture avec le modèle actuel d’économie de
 			comptoir",
 					"mesures": [
 						{
