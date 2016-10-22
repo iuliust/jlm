@@ -1,12 +1,18 @@
 :host {
+	--main-background-color: hsl(0, 0%, 94%); // couleur de fond du body
+	--secondary-background-color: hsl(0, 0%, 83%); // couleur de fond des avant-propos en début de chapitre
+
+	--theme-main-color: hsl(190, 100%, 36%);
+	--theme-secondary-color: hsl(10, 64%, 48%);
+
+	background-color: var(--main-background-color);
+	
 	display: flex;
 	flex-direction: column;
-	width: 800px;
+	width: 100%;
 	margin: auto;
-}
-
-h1 {
-	font-weight: normal;
+	padding: 2em;
+	background-color: white;
 }
 
 div {

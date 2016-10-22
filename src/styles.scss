@@ -2,17 +2,8 @@
 // @import url('https://fonts.googleapis.com/css?family=Noto+Serif');
 
 body {
-	--main-background-color: hsl(0, 0%, 94%);
-	--secondary-background-color: hsl(0, 0%, 83%);
-
-	// --main-background-color: hsl(0, 0%, 83%); // couleur de fond du body
-	// --secondary-background-color: hsl(0, 0%, 80%); // couleur de fond des avant-propos en début de chapitre
-
-	--theme-main-color: hsl(190, 100%, 36%);
-	--theme-secondary-color: hsl(10, 64%, 48%);
-	background-color: var(--main-background-color);
-	display: flex;
-	justify-content: center;
+	padding: 0;
+	margin: 0;
 }
 
 sup.eme {
@@ -23,11 +14,6 @@ abbr {
 	text-decoration: underline dashed hsl(190, 100%, 36%);
 	text-decoration: underline dashed var(--theme-main-color);
 	text-underline-position: under;
-	// background-color: var(--theme-main-color);
-	// color: white;
-	// display: inline-block;
-	// padding: 0px 3px;
-	// border-radius: 2px;
 
 	cursor: help;
 }
