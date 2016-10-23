@@ -2,6 +2,9 @@
 
 :host {
 	display: block;
+	position: sticky;
+	top: 0px;
+	z-index: 1;
 	background-color: var(--theme-primary-color);
 }
 
@@ -9,33 +12,52 @@ ul {
 	display: flex;
 	list-style-type: none;
 	padding-left: 0;
-}
 
-li {
-	// flex: 1;
-	text-align: center;
-	color: white;
+	li {
+		// flex: 1;
+		text-align: center;
+		color: white;
 
-	&.active-link {
-		color: black;
-		text-decoration: underline;
-	}
-
-	a {
-		color: inherit;
-		display: block;
-		padding: .5em 1em;
-		text-decoration: none;
-
-		&:hover {
-			background-color: hsla(0%, 0%, 20, .2);
+		&.active-link {
+			color: black;
 			text-decoration: underline;
+		}
+
+		.phi {
+			// display: inherit;
+		}
+
+		.titre {
+			display: none;
+		}
+
+		a {
+			color: inherit;
+			display: block;
+			padding: .5em 1em;
+			text-decoration: none;
+
+			&:hover {
+				background-color: hsla(0%, 0%, 20, .2);
+				text-decoration: underline;
+			}
 		}
 	}
 }
 
+
 @media (max-width: $xs-max-width) {
 }
 
-@media (min-width: $xs-max-width) and (max-width: $sm-max-width) {
+@media (min-width: $xs-max-width) {
+	ul {
+		li {
+			.phi {
+				display: none;
+			}
+			.titre {
+				display: block;
+			}
+		}
+	}
 }
