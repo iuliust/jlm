@@ -2,10 +2,9 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class PreferencesService {
-	fontSize: number;
+	fontSize: number = 1;
 
 	constructor() {
-		this.fontSize = 1;
 	}
 
 	incrementFontSize() {
@@ -14,6 +13,10 @@ export class PreferencesService {
 
 	decrementFontSize() {
 		this.fontSize -= 0.1;
+	}
+
+	resetFontSize() {
+		this.fontSize = 1;
 	}
 
 	savePreferences() {}

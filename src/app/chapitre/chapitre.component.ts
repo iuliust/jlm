@@ -6,17 +6,20 @@ import { Http, Response } from '@angular/http';
 import { ActivatedRoute, Params } from '@angular/router';
 import 'rxjs/add/operator/toPromise';
 
+import { PreferencesService } from '../shared';
+
 @Component({
   selector: 'jlm-chapitre',
   templateUrl: './chapitre.component.html',
   styleUrls: ['./chapitre.component.scss']
 })
 export class ChapitreComponent implements OnInit {
-	chapitre: any;
+  chapitre: any;
 
   constructor(
-		private route : ActivatedRoute,
-		private http: Http
+		private route: ActivatedRoute,
+		private http: Http,
+		private preferences: PreferencesService
 	) { }
 
 	ngOnInit() {

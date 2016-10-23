@@ -1,32 +1,31 @@
-<h1 class="chapitre--titre" [innerHTML]="chapitre?.titre">
-</h1>
+<div [style.fontSize.em]="preferences.fontSize">
 
-<article class="avant-propos">
-	<p class="citation-auteur">
-		Jean-Luc Mélenchon :
-	</p>
-	<blockquote>
-		<p *ngFor="let paragraphe of chapitre?.introduction" [innerHTML]="paragraphe">
+	<h1 class="chapitre--titre hpad" [innerHTML]="chapitre?.titre"></h1>
+
+	<article class="avant-propos hpad">
+		<p class="citation-auteur">
+			Jean-Luc Mélenchon :
 		</p>
-	</blockquote>
-</article>
+		<blockquote>
+			<p *ngFor="let paragraphe of chapitre?.introduction" [innerHTML]="paragraphe"></p>
+		</blockquote>
+	</article>
 
-<article class="section" *ngFor="let section of chapitre?.sections">
-	<h2 class="titre-section" [innerHTML]="section?.titre">
-	</h2>
-	<p class="introduction" *ngIf="section?.introduction" [innerHTML]="section?.introduction">
-	</p>
-	<ol>
-		<li *ngFor="let mesure of section?.mesures">
-			<p [innerHTML]="mesure.texte"></p>
-			<ul *ngIf="mesure?.mesures">
-				<li *ngFor="let sousMesure of mesure?.mesures">
-					<p [innerHTML]="sousMesure.texte"></p>
-				</li>
-			</ul>
-		</li>
-	</ol>
-	<div *ngIf="section?.outro">
-		<p *ngFor="let paragraphe of section.outro" [innerHTML]="paragraphe"></p>
-	</div>
-</article>
+	<article class="section hpad" *ngFor="let section of chapitre?.sections">
+		<h2 class="titre-section" [innerHTML]="section?.titre"></h2>
+		<p class="introduction" *ngIf="section?.introduction" [innerHTML]="section?.introduction"></p>
+		<ol>
+			<li *ngFor="let mesure of section?.mesures">
+				<p [innerHTML]="mesure.texte"></p>
+				<ul *ngIf="mesure?.mesures">
+					<li *ngFor="let sousMesure of mesure?.mesures">
+						<p [innerHTML]="sousMesure.texte"></p>
+					</li>
+				</ul>
+			</li>
+		</ol>
+		<div *ngIf="section?.outro">
+			<p *ngFor="let paragraphe of section.outro" [innerHTML]="paragraphe"></p>
+		</div>
+	</article>
+</div>

@@ -1,11 +1,6 @@
 :host {
-	background-color: var(--background-secondary-color);
 	display: block;
-	margin: 1em;
-	position: -webkit-sticky;
-	position: sticky;
-	padding: 8px 1em;
-	top: 10px;
+	border-right: 1px dashed grey;
 }
 
 [jlmScrollTop] {

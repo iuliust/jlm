@@ -1,17 +1,31 @@
+@import '../../form-factors.scss';
+
 :host {
 	display: block;
+	font-size: 1em;
+
+	.hpad {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
 }
 
 .chapitre--titre {
 	font-weight: normal;
 	margin-bottom: .5em;
+	font-size: 1.2em;
+	padding: 0;
 }
 
 .avant-propos {
 	// background-color: var(--background-secondary-color);
 	background-color: var(--theme-secondary-color);
-	padding: 1.6rem;
-	font-size: 1.5em;
+	padding-top: .8em;
+	padding-bottom: .8em;
+
+	.citation-auteur {
+		margin-top: 0;
+	}
 
 	blockquote {
 		font-style: italic;
@@ -41,9 +55,10 @@
 }
 
 article.section {
-	// font-family: 'Lora', serif;
-	padding: 1em 1.4em;
-	font-size: 1.2em;
+	font-family: 'Lora', serif;
+	padding-top: .8em;
+	padding-bottom: .8em;
+	font-size: 1em;
 	background-color: hsl(0, 0%, 100%);
 	margin: 1em 0;
 	text-align-last: start;
@@ -55,7 +70,6 @@ article.section {
 
 	.titre-section {
 		margin: 0;
-		font-weight: 400;
 	}
 
 	.introduction {
@@ -70,8 +84,21 @@ article.section {
 	}
 
 	ul, ol {
-		text-align: justify;
+		// text-align: justify;
 		-webkit-padding-start: 40px;
 		-moz-padding-start: 40px;
+	}
+}
+
+
+
+@media (min-width: $sm-max-width) {
+	:host {
+		font-size: 1.1em;
+
+		.hpad {
+			padding-left: .9em;
+			padding-right: .9em;
+		}
 	}
 }
