@@ -28,7 +28,7 @@ export class ChapitreComponent implements OnInit {
 				const pure = (res.text().replace(/[\n\t]+/g, ' '));
 				const json = JSON.parse(pure);
 				this.chapitre = json;
-			})
+			});
 		});
 	}
 }

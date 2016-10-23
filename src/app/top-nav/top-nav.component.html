@@ -1,25 +1,29 @@
-<nav>
+<nav role="navigation">
 	<ul>
-		<li routerLinkActive="active-link">
-			<a [routerLink]="['chapitre', 1]"><span class="chapitre-mot">Chapitre </span><span class="numero">1</span></a>
+		<li routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+true}">
+			<a [routerLink]="['/']"><span class="titre">L'avenir en commun</span></a>
 		</li>
 		<li routerLinkActive="active-link">
-			<a [routerLink]="['chapitre', 2]"><span class="chapitre-mot">Chapitre </span><span class="numero">2</span></a>
+			<a [routerLink]="['chapitre', 1]">1</a>
 		</li>
 		<li routerLinkActive="active-link">
-			<a [routerLink]="['chapitre', 3]"><span class="chapitre-mot">Chapitre </span><span class="numero">3</span></a>
+			<a [routerLink]="['chapitre', 2]">2</a>
 		</li>
 		<li routerLinkActive="active-link">
-			<a [routerLink]="['chapitre', 4]"><span class="chapitre-mot">Chapitre </span><span class="numero">4</span></a>
+			<a [routerLink]="['chapitre', 3]">3</a>
 		</li>
 		<li routerLinkActive="active-link">
-			<a [routerLink]="['chapitre', 5]"><span class="chapitre-mot">Chapitre </span><span class="numero">5</span></a>
+			<a [routerLink]="['chapitre', 4]">4</a>
 		</li>
 		<li routerLinkActive="active-link">
-			<a [routerLink]="['chapitre', 6]"><span class="chapitre-mot">Chapitre </span><span class="numero">6</span></a>
+			<a [routerLink]="['chapitre', 5]">5</a>
 		</li>
 		<li routerLinkActive="active-link">
-			<a [routerLink]="['chapitre', 7]"><span class="chapitre-mot">Chapitre </span><span class="numero">7</span></a>
+			<a [routerLink]="['chapitre', 6]">6</a>
+		</li>
+		<li routerLinkActive="active-link">
+			<a [routerLink]="['chapitre', 7]">7</a>
 		</li>
 	</ul>
 </nav>

@@ -1,6 +1,8 @@
+@import '../../form-factors.scss';
+
 :host {
-	margin-bottom: 1em;
 	display: block;
+	background-color: var(--theme-primary-color);
 }
 
 ul {
@@ -10,46 +12,30 @@ ul {
 }
 
 li {
-	flex: 1;
+	// flex: 1;
 	text-align: center;
-	color: black;
+	color: white;
 
 	&.active-link {
-		color: firebrick;
+		color: black;
+		text-decoration: underline;
 	}
 
 	a {
 		color: inherit;
 		display: block;
-		padding: .5em;
+		padding: .5em 1em;
 		text-decoration: none;
 
 		&:hover {
-			background-color: lightgrey;
+			background-color: hsla(0%, 0%, 20, .2);
 			text-decoration: underline;
 		}
-
-		.chapitre-mot {
-
-		}
 	}
 }
 
-@media (max-width: 800px) {
-	li {
-		&:not(.active-link) {
-			flex: 1 4 auto;
-
-			.chapitre-mot {
-				display: none;
-			}
-		}
-		&.active-link {
-			flex: 4 1 auto;
-		}
-	}
+@media (max-width: $xs-max-width) {
 }
 
-@media (min-width: 800px) and (max-width: 1024) {
-
+@media (min-width: $xs-max-width) and (max-width: $sm-max-width) {
 }

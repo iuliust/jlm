@@ -1,17 +1,24 @@
+@import '../form-factors.scss';
+@import '../colors.scss';
+
+
 :host {
-	--main-background-color: hsl(0, 0%, 94%); // couleur de fond du body
-	--secondary-background-color: hsl(0, 0%, 83%); // couleur de fond des avant-propos en début de chapitre
+	// couleur de fond du body
+	--background-primary-color: $background-primary-color;
 
-	--theme-main-color: hsl(190, 100%, 36%);
-	--theme-secondary-color: hsl(10, 64%, 48%);
+	// couleur de fond des avant-propos en début de chapitre
+	--background-secondary-color: $background-secondary-color;
 
-	background-color: var(--main-background-color);
+	--theme-primary-color: $theme-primary-color;
+	--theme-secondary-color: $theme-secondary-color;
+
+	background-color: var(--background-primary-color);
 	
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	margin: auto;
-	padding: 2em;
+	// padding: 2em;
 	background-color: white;
 }
 
@@ -32,8 +39,19 @@ div {
 	}
 }
 
-@media (min-width: 400px) and (max-width: 600px) {
+@media (max-width: $xs-max-width) {
 	:host {
-		width: 100%;
+		div {
+			flex-direction: column;
+
+			main {
+				order: 2;
+			}
+
+			aside {
+				order: 1;
+				flex-basis: auto;
+			}
+		}
 	}
 }

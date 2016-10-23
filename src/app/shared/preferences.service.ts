@@ -16,4 +16,6 @@ export class PreferencesService {
 		this.fontSize -= 0.1;
 	}
 
+	savePreferences() {}
+
 }

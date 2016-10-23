@@ -7,7 +7,7 @@
 }
 
 .avant-propos {
-	// background-color: var(--secondary-background-color);
+	// background-color: var(--background-secondary-color);
 	background-color: var(--theme-secondary-color);
 	padding: 1.6rem;
 	font-size: 1.5em;
@@ -21,11 +21,19 @@
 			margin-top: 2rem;
 			text-align: justify;
 
-			&:first-of-type::before {
-				content: "«";
+			&:first-of-type {
+				margin-top: 0;
+
+				&::before {
+					content: "«";
+				}
 			}
-			&:last-of-type::after {
-				content: "»";
+			&:last-of-type {
+				margin-bottom: 0;
+
+				&::after {
+					content: "»";
+				}
 			}
 		}
 	}
