@@ -16,7 +16,7 @@
 	
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	// width: 100%;
 	margin: auto;
 	// padding: 2em;
 	background-color: white;
@@ -38,18 +38,17 @@ div {
 	}
 }
 
-@media (max-width: $xs-max-width) {
+@media (min-width: $sm-max-width) {
 	:host {
 		div {
-			flex-direction: column;
-
-			aside {
-				order: 1;
-				flex-basis: auto;
-			}
+			flex-direction: row;
 
 			main {
-				order: 2;
+				padding: 1em;
+			}
+
+			aside {
+				flex-basis: auto;
 			}
 		}
 	}
