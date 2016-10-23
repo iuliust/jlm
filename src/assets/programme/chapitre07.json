@@ -205,11 +205,11 @@
 						},
 						{
 							"texte": "Garantir la neutralité du net et lutter contre le profilage en ligne comme le défend la
-					Quadrature du Net"
+					<a href=\"https://www.laquadrature.net/fr/neutralite_du_Net\"><i>Quadrature du Net</i></a>"
 						},
 						{
-							"texte": "Systématiser la publication en open data des données publiques détenues par les
-					collectivités comme le propose l’association Regards citoyens"
+							"texte": "Systématiser la publication en <a href=\"https://fr.wikipedia.org/wiki/Open_data\"><i>open data</i></a> des données publiques détenues par les
+					collectivités comme le propose l’association <a href=\"https://www.regardscitoyens.org\"><i>Regards citoyens</i></a>"
 						}
 					]
 				},
@@ -237,7 +237,7 @@
 							"texte": "Protéger les données personnelles contre leur utilisation mercantile"
 						},
 						{
-							"texte": "Soutenir la création de <i lang=\"en\">fablabs</i> et autres lieux collectifs de création et fabrication liés au
+							"texte": "Soutenir la création de <a href=\"https://fr.wikipedia.org/wiki/Fab_lab\"><i lang=\"en\">fablabs</i></a> et autres lieux collectifs de création et fabrication liés au
 					numérique, à l’impression 3D, etc"
 						}
 					]
