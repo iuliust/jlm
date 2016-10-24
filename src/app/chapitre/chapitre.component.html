@@ -1,4 +1,4 @@
-<div [style.fontSize.em]="preferences.fontSize">
+<div [style.fontSize.em]="preferences.fontSize" [hidden]="!chapitre">
 
 	<h1 class="chapitre--titre hpad" [innerHTML]="chapitre?.titre"></h1>
 
