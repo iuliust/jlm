@@ -17,6 +17,7 @@ import { FontSizeComponent } from './font-size/font-size.component';
 
 import { WindowRef } from './shared';
 import { PreferencesService } from './shared/preferences.service';
+import { AppNavigationComponent } from './app-navigation/app-navigation.component';
 
 @NgModule({
 	declarations: [
@@ -26,7 +27,8 @@ import { PreferencesService } from './shared/preferences.service';
 		ChapitreNavigationComponent,
 		EncartFiltresComponent,
 		ScrollTopDirective,
-		FontSizeComponent
+		FontSizeComponent,
+		AppNavigationComponent
 	],
 	imports: [
 		BrowserModule,
