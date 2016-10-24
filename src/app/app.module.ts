@@ -10,7 +10,7 @@ import { TemplateDirectivesModule } from './template-directives/template-directi
 import { AppComponent } from './app.component';
 import { ChapitreComponent } from './chapitre/chapitre.component';
 import { HomeComponent } from './home/home.component';
-import { TopNavComponent } from './top-nav/top-nav.component';
+import { ChapitreNavigationComponent } from './chapitre-navigation/chapitre-navigation.component';
 import { EncartFiltresComponent } from './encart-filtres/encart-filtres.component';
 import { ScrollTopDirective } from './scroll-top/scroll-top.directive';
 import { FontSizeComponent } from './font-size/font-size.component';
@@ -23,7 +23,7 @@ import { PreferencesService } from './shared/preferences.service';
 		AppComponent,
 		ChapitreComponent,
 		HomeComponent,
-		TopNavComponent,
+		ChapitreNavigationComponent,
 		EncartFiltresComponent,
 		ScrollTopDirective,
 		FontSizeComponent
