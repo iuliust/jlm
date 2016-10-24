@@ -1,12 +1,17 @@
 <md-toolbar color="primary">
+	<button md-icon-button (click)="toggleSidenav()"><md-icon>menu</md-icon></button>
   <span>L'avenir en commun</span>
 </md-toolbar>
-<div>
-	<aside>
-		<jlm-top-nav></jlm-top-nav>
-		<jlm-encart-filtres></jlm-encart-filtres>
-	</aside>
-	<main>
-		<router-outlet></router-outlet>
-	</main>
-</div>
+<md-sidenav-layout>
+	<md-sidenav #nav>
+		<span>coucou</span>
+	</md-sidenav>
+	<div>
+		<aside>
+			<jlm-encart-filtres></jlm-encart-filtres>
+		</aside>
+		<main>
+			<router-outlet></router-outlet>
+		</main>
+	</div>
+</md-sidenav-layout>
