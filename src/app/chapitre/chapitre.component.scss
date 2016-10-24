@@ -54,7 +54,7 @@
 	}
 }
 
-article.section {
+.section {
 	font-family: 'Lora', serif;
 	font-size: 1em;
 	margin: 1em 0;
@@ -80,6 +80,12 @@ article.section {
 		-moz-padding-start: 40px;
 	}
 }
+
+footer {
+	display: flex;
+	justify-content: space-between;
+}
+
 
 
 
