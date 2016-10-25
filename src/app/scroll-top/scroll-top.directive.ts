@@ -11,7 +11,7 @@ export class ScrollTopDirective {
 
 	@HostListener('click')
 	scrollToTop() {
-		this.window.nativeWindow.scrollTo({top:0});
+		this.window.nativeWindow.scrollTo({top: 0});
 	}
 
 }

@@ -1,9 +1,9 @@
 /* tslint:disable:no-unused-variable */
 
-import { TestBed, async } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+// import { TestBed, async } from '@angular/core/testing';
+// import { AppComponent } from './app.component';
 
-describe('App: Jlm', () => {
+// describe('App: Jlm', () => {
   // beforeEach(() => {
   //   TestBed.configureTestingModule({
   //     declarations: [
@@ -30,4 +30,4 @@ describe('App: Jlm', () => {
   //   let compiled = fixture.debugElement.nativeElement;
   //   expect(compiled.querySelector('h1').textContent).toContain('jlm works!');
   // }));
-});
+// });

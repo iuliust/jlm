@@ -1,7 +1,7 @@
 /* tslint:disable:no-unused-variable */
 
-import { TestBed, async } from '@angular/core/testing';
-import { EncartFiltresComponent } from './encart-filtres.component';
+// import { TestBed, async } from '@angular/core/testing';
+// import { EncartFiltresComponent } from './encart-filtres.component';
 
 // describe('Component: EncartFiltres', () => {
 //   it('should create an instance', () => {

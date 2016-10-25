@@ -1,11 +1,11 @@
 /* tslint:disable:no-unused-variable */
 
-import { TestBed, async } from '@angular/core/testing';
-import { ScrollTopDirective } from './scroll-top.directive';
+// import { TestBed, async } from '@angular/core/testing';
+// import { ScrollTopDirective } from './scroll-top.directive';
 
-describe('Directive: ScrollTop', () => {
-  it('should create an instance', () => {
-    let directive = new ScrollTopDirective();
-    expect(directive).toBeTruthy();
-  });
-});
+// describe('Directive: ScrollTop', () => {
+//   it('should create an instance', () => {
+//     let directive = new ScrollTopDirective();
+//     expect(directive).toBeTruthy();
+//   });
+// });
