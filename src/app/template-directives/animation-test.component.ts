@@ -1,23 +1,23 @@
 import {
 	Component,
-	OnInit,
-	OnDestroy,
+	// OnInit,
+	// OnDestroy,
 	AfterViewInit,
-	ViewChild,
+	// ViewChild,
 	HostBinding,
 	ElementRef,
-	EmbeddedViewRef,
+	// EmbeddedViewRef,
 	trigger,
 	state,
 	style,
 	transition,
 	animate,
 	NgZone,
-	ViewEncapsulation
+	// ViewEncapsulation
 } from '@angular/core';
 
 @Component({
-  selector: '[jlm-animation-test]',
+  selector: 'jlm-animation-test',
 	template: `<ng-content></ng-content>`,
 	styles: [`:host {display: block; will-change: opacity}`],
 	animations: [
@@ -35,9 +35,10 @@ import {
 	// encapsulation: ViewEncapsulation.Native
 })
 export class AnimationTestComponent implements AfterViewInit {
-	@HostBinding('@heroState') state: string = 'inactive';
+	@HostBinding('@heroState')
+	private state: string = 'inactive';
 	private io: any;
-	dejaVu: boolean = false;
+	private dejaVu: boolean = false;
 
   constructor(private zone: NgZone, private ref: ElementRef) {  }
 
@@ -53,17 +54,17 @@ export class AnimationTestComponent implements AfterViewInit {
 		this.io.observe(this.ref.nativeElement);
 	}
 
-	ngOnDestroy() {
-		this.io.unobserve(this.ref.nativeElement);
-		this.io.disconnect();
-	}
+	// ngOnDestroy() {
+	// 	this.io.unobserve(this.ref.nativeElement);
+	// 	this.io.disconnect();
+	// }
 
 	intersectionObserverCallback(entries) {
 		if (entries[0].target === this.ref.nativeElement) {
 			if (entries[0].intersectionRatio > 0) {
 				this.state = 'active';
 				this.dejaVu = true;
-			} else if (!this.dejaVu){
+			} else if (!this.dejaVu) {
 				this.state = 'inactive';
 			}
 		}

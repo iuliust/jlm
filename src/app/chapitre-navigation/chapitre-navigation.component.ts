@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chapitre-navigation.component.scss']
 })
 export class ChapitreNavigationComponent implements OnInit {
+  titre: string = 'ceci est un string';
 
   constructor() { }
 

@@ -1,4 +1,4 @@
-import { Injectable, ViewRef, ViewContainerRef } from '@angular/core';
+import { Injectable/*, ViewRef, ViewContainerRef*/ } from '@angular/core';
 
 export interface IntersectionObserverInterface {
 	observe(ViewRef);
