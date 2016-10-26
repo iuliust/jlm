@@ -9,7 +9,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { ChapitreNavigationComponent } from './chapitre-navigation.component';
 
 
-describe('ChapitreNavigationComponent', () => {
+describe('Tests de ChapitreNavigationComponent', () => {
     let fixture: ComponentFixture<ChapitreNavigationComponent>;
     let comp: ChapitreNavigationComponent;
     let de: DebugElement;
