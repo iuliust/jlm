@@ -3,11 +3,15 @@
 import { MaterialRootModule } from '@angular/material';
 import { TestBed, ComponentFixture, ComponentFixtureAutoDetect } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import { Component, DebugElement } from '@angular/core';
 
-import { AppRoutingModule } from '../app-routing.module';
+import { RouterTestingModule } from '@angular/router/testing';
 import { ChapitreNavigationComponent } from './chapitre-navigation.component';
 
+@Component({
+    template: ``
+})
+class DummyComponent {}
 
 describe('Tests de ChapitreNavigationComponent', () => {
     let fixture: ComponentFixture<ChapitreNavigationComponent>;
@@ -17,8 +21,14 @@ describe('Tests de ChapitreNavigationComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            declarations: [ ChapitreNavigationComponent ],
-            imports: [ MaterialRootModule ]
+            declarations: [ ChapitreNavigationComponent, DummyComponent ],
+            imports: [
+                MaterialRootModule,
+                RouterTestingModule.withRoutes([
+                    { path: '', component: DummyComponent },
+                    { path: 'chapitre/:chapitreId', component: DummyComponent }
+                ])
+            ]
         });
 
         fixture = TestBed.createComponent(ChapitreNavigationComponent);

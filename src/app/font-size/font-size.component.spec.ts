@@ -17,24 +17,10 @@ describe('FontSizeComponent', () => {
     let buttonsDebug: DebugElement[];
     let buttons: HTMLButtonElement[];
 
-    let preferencesServiceStub;
     let injectedPreferencesService;
     let spy: jasmine.Spy;
 
     beforeEach(() => {
-        preferencesServiceStub = {
-            fontSize: 1,
-            incrementFontSize() {
-        		this.fontSize += 0.1;
-        	},
-        	decrementFontSize() {
-        		this.fontSize -= 0.1;
-        	},
-        	resetFontSize() {
-        		this.fontSize = 1;
-        	},
-        	savePreferences() {}
-        };
 
         TestBed.configureTestingModule({
             declarations: [ FontSizeComponent ],
@@ -50,7 +36,7 @@ describe('FontSizeComponent', () => {
 
         injectedPreferencesService = fixture.debugElement.injector.get(PreferencesService);
 
-        spy = spyOn(PreferencesService, 'getPreferences')
+        spy = spyOn(injectedPreferencesService, 'getPreferences')
             .and.returnValue(Promise.resolve('Dans l\'univers, deux choses sont infinies.'));
 
         buttonsDebug = fixture.debugElement.queryAll(By.css('button'));
@@ -58,9 +44,7 @@ describe('FontSizeComponent', () => {
 
     });
 
-    it('stub object and injected PreferencesService should not be the same', () => {
-        expect(injectedPreferencesService === preferencesServiceStub).toBe(false);
-        preferencesServiceStub.fontSize = 2;
+    it('font-size should equal 1', () => {
         expect(injectedPreferencesService.fontSize).toEqual(1);
     });
 
