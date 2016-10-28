@@ -1,23 +1,23 @@
 /* tslint:disable:no-unused-variable */
 
 import { MaterialRootModule } from '@angular/material';
-import { TestBed, ComponentFixture, ComponentFixtureAutoDetect } from '@angular/core/testing';
+import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { Component, DebugElement } from '@angular/core';
 
 import { RouterTestingModule } from '@angular/router/testing';
 import { ChapitreNavigationComponent } from './chapitre-navigation.component';
 
-@Component({
-    template: ``
-})
+@Component({template: ``})
 class DummyComponent {}
 
-describe('Tests de ChapitreNavigationComponent', () => {
+describe('ChapitreNavigationComponent', () => {
     let fixture: ComponentFixture<ChapitreNavigationComponent>;
-    let comp: ChapitreNavigationComponent;
-    let de: DebugElement;
-    let el: HTMLElement;
+    let componentInstance: ChapitreNavigationComponent;
+    let phiSpanDe: DebugElement;
+    let phiSpanEl: HTMLElement;
+    let anchorDe: DebugElement[];
+    let anchorEls: HTMLElement[];
 
     beforeEach(() => {
         TestBed.configureTestingModule({
@@ -32,22 +32,22 @@ describe('Tests de ChapitreNavigationComponent', () => {
         });
 
         fixture = TestBed.createComponent(ChapitreNavigationComponent);
-        comp = fixture.componentInstance;
+        componentInstance = fixture.componentInstance;
 
-        de = fixture.debugElement.query(By.css('h2'));
-        el = de.nativeElement;
+        phiSpanDe = fixture.debugElement.query(By.css('.phi .numero'));
+        phiSpanEl = phiSpanDe.nativeElement;
+
+        anchorDe = fixture.debugElement.queryAll(By.css('.chapitre-link a'));
+        anchorEls = anchorDe.map(a => a.nativeElement);
     });
 
-    it('no title in the DOM until manually call `detectChanges`', () => {
-        expect(el.textContent).toEqual('');
+    it('should display a link to root route and phi greek letter', () => {
+        expect(phiSpanEl.textContent).toContain('φ');
     });
-    it('should display the title of the component', () => {
-        fixture.detectChanges();
-        expect(el.textContent).toContain(comp.titre);
-    });
-    it('should display a different test title', () => {
-        comp.titre = 'Coucou les zouzous';
-        fixture.detectChanges();
-        expect(el.textContent).toContain('zouzous');
+
+    it('should display seven links, from 1 to 7', () => {
+        expect(anchorEls.length).toBe(7, 'displays links to all seven chapters');
+        expect(anchorEls.map(a => a.textContent))
+            .toEqual(['1', '2', '3', '4', '5', '6', '7'], 'the links\' text content are numbers going from 1 to 7');
     });
 });

@@ -7,6 +7,7 @@ import { By } from '@angular/platform-browser';
 
 import { FontSizeComponent } from './font-size.component';
 import { PreferencesService } from '../shared';
+import { click } from '../../testing';
 
 
 describe('FontSizeComponent', () => {
@@ -18,7 +19,7 @@ describe('FontSizeComponent', () => {
     let buttons: HTMLButtonElement[];
 
     let injectedPreferencesService;
-    let spy: jasmine.Spy;
+    // let spy: jasmine.Spy;
 
     beforeEach(() => {
 
@@ -36,15 +37,14 @@ describe('FontSizeComponent', () => {
 
         injectedPreferencesService = fixture.debugElement.injector.get(PreferencesService);
 
-        spy = spyOn(injectedPreferencesService, 'getPreferences')
-            .and.returnValue(Promise.resolve('Dans l\'univers, deux choses sont infinies.'));
+        // spy = spyOn(injectedPreferencesService, 'getPreferences')
+        //     .and.returnValue(Promise.resolve('Dans l\'univers, deux choses sont infinies.'));
 
         buttonsDebug = fixture.debugElement.queryAll(By.css('button'));
         buttons = buttonsDebug.map(e => e.nativeElement);
-
     });
 
-    it('font-size should equal 1', () => {
+    it('font-size should equal 1 initially', () => {
         expect(injectedPreferencesService.fontSize).toEqual(1);
     });
 
@@ -52,6 +52,24 @@ describe('FontSizeComponent', () => {
         expect(buttons.length).toEqual(3);
         const buttonsContent: string[] = buttons.map(b => b.textContent);
         expect(buttonsContent).toEqual(['A+ ', 'A- ', 'refresh ']);
+    });
+
+    it('clicking the first button should increment the font size', () => {
+        expect(injectedPreferencesService.fontSize).toEqual(1);
+        click(buttons[0]);
+        expect(injectedPreferencesService.fontSize).toEqual(1 + 0.1);
+    });
+
+    it('clicking the second button should decrement the font size', () => {
+        expect(injectedPreferencesService.fontSize).toEqual(1);
+        click(buttons[1]);
+        expect(injectedPreferencesService.fontSize).toEqual(1 - .1);
+    });
+
+    it('clicking the third button should reset the font size', () => {
+        expect(injectedPreferencesService.fontSize).toEqual(1);
+        click(buttons[2]);
+        expect(injectedPreferencesService.fontSize).toEqual(1);
     });
 
 });

@@ -26,6 +26,7 @@ testem.log
 /typings
 yarn.lock
 yarn-error.log
+/spec
 
 # e2e
 /e2e/*.js
