@@ -1,0 +1,107 @@
+@import '../../../form-factors.scss';
+
+:host {
+	display: block;
+	font-size: 1em;
+
+	.hpad {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+}
+
+.chapitre--titre {
+	font-weight: normal;
+	margin-bottom: .5em;
+	font-size: 1.2em;
+	padding: 0;
+}
+
+.avant-propos {
+	background-color: var(--theme-secondary-color);
+	padding-top: .8em;
+	padding-bottom: .8em;
+
+	.citation-auteur {
+		margin-top: 0;
+	}
+
+	blockquote {
+		font-style: italic;
+		margin: 0;
+
+		p {
+			color: white;
+			margin-top: 2rem;
+			text-align: justify;
+
+			&:first-of-type {
+				margin-top: 0;
+
+				&::before {
+					content: "«";
+				}
+			}
+			&:last-of-type {
+				margin-bottom: 0;
+
+				&::after {
+					content: "»";
+				}
+			}
+		}
+	}
+}
+
+.liste-sections {
+	list-style-type: upper-alpha;
+	list-style-position: inside;
+	font-weight: bold;
+    -webkit-padding-start: 0;
+
+	.section {
+		font-family: 'Lora', serif;
+		font-weight: normal;
+		font-size: 1em;
+		margin: 1em 0;
+
+		.titre-section {
+			margin: 0;
+		}
+
+		.introduction {
+			font-style: italic;
+		}
+
+		& > p {
+			text-align: justify;
+			font-style: italic;
+			margin-bottom: 1em;
+			line-height: 1.2em;
+		}
+
+		ul, ol {
+			list-style-position: outside;
+		}
+	}
+}
+
+
+footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+@media (min-width: $sm-max-width) {
+	:host {
+		font-size: 1.1em;
+
+		.hpad {
+			padding-left: .9em;
+			padding-right: .9em;
+		}
+	}
+}

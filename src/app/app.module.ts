@@ -6,29 +6,28 @@ import { MaterialModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { TemplateDirectivesModule } from './template-directives/template-directives.module';
+import { ChapitreModule } from './chapitre';
 
 import { AppComponent } from './app.component';
-import { ChapitreComponent } from './chapitre/chapitre.component';
 import { HomeComponent } from './home/home.component';
-import { ChapitreNavigationComponent } from './chapitre-navigation/chapitre-navigation.component';
 import { EncartFiltresComponent } from './encart-filtres/encart-filtres.component';
-import { ScrollTopDirective } from './scroll-top/scroll-top.directive';
 import { FontSizeComponent } from './font-size/font-size.component';
+import { AppNavigationComponent } from './app-navigation/app-navigation.component';
+
+import { ScrollTopDirective } from './scroll-top/scroll-top.directive';
 
 import { WindowRef } from './shared';
 import { PreferencesService } from './shared/preferences.service';
-import { AppNavigationComponent } from './app-navigation/app-navigation.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
-		ChapitreComponent,
 		HomeComponent,
-		ChapitreNavigationComponent,
 		EncartFiltresComponent,
-		ScrollTopDirective,
 		FontSizeComponent,
-		AppNavigationComponent
+		AppNavigationComponent,
+
+		ScrollTopDirective
 	],
 	imports: [
 		BrowserModule,
@@ -36,7 +35,8 @@ import { AppNavigationComponent } from './app-navigation/app-navigation.componen
 		HttpModule,
 		MaterialModule.forRoot(),
 		AppRoutingModule,
-		TemplateDirectivesModule
+		TemplateDirectivesModule,
+		ChapitreModule
 	],
 	providers: [WindowRef, PreferencesService],
 	bootstrap: [AppComponent]
