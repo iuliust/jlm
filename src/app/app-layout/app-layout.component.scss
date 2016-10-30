@@ -9,6 +9,7 @@
 
 md-sidenav-layout {
 	flex: 1;
+	background-color: inherit;
 
 	md-sidenav {
 		width: 200px;
@@ -28,10 +29,16 @@ div {
 		display: flex;
 		flex: 1;
 		flex-flow: column;
+		background-color: white;
+		margin-left: 5px;
+		margin-right: 5px;
 	}
 
 	aside {
 		position: relative;
+		background-color: white;
+		margin-left: 5px;
+		margin-right: 5px;
 	}
 }
 
