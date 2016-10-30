@@ -1,0 +1,55 @@
+@import '../../form-factors.scss';
+@import '../../colors.scss';
+
+:host {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+md-sidenav-layout {
+	flex: 1;
+
+	md-sidenav {
+		width: 200px;
+	}
+}
+
+div {
+	box-shadow: 0 0 0 0 black;
+	display: flex;
+	flex-direction: column;
+	font-family: Lora;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+
+	main {
+		display: flex;
+		flex: 1;
+		flex-flow: column;
+	}
+
+	aside {
+		position: relative;
+	}
+}
+
+@media (min-width: $sm-max-width) {
+	:host {
+		div {
+			flex-direction: row;
+			width: 960px;
+			justify-content: center;
+
+			main {
+				padding: 1em;
+				flex: 1 1 700px;
+			}
+
+			aside {
+				flex: 1 1 260px;
+			}
+		}
+	}
+}

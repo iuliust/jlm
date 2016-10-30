@@ -13,53 +13,10 @@
 	--theme-secondary-color: $theme-secondary-color;
 
 	background-color: var(--background-primary-color);
-	
+
 	display: flex;
 	flex-direction: column;
 	margin: auto;
 	min-height: 100vh;
 }
 
-md-sidenav {
-	width: 200px;
-}
-
-div {
-	background-color: white;
-	box-shadow: 0 0 0 0 black;
-	display: flex;
-	flex-direction: column;
-	font-family: Lora;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-
-	main {
-		display: flex;
-		flex: 1;
-		flex-flow: column;
-	}
-
-	aside {
-		position: relative;
-	}
-}
-
-@media (min-width: $sm-max-width) {
-	:host {
-		div {
-			flex-direction: row;
-			width: 960px;
-			justify-content: center;
-
-			main {
-				padding: 1em;
-				flex: 1 1 700px;
-			}
-
-			aside {
-				flex: 1 1 260px;
-			}
-		}
-	}
-}

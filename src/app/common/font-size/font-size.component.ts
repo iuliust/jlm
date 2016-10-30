@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { PreferencesService } from '../shared';
+import { PreferencesService } from '../../shared';
 
 @Component({
   selector: 'jlm-font-size',

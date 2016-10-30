@@ -1,6 +1,6 @@
 import { Directive, HostListener } from '@angular/core';
 
-import { WindowRef } from '../shared';
+import { WindowRef } from '../../shared';
 
 @Directive({
   selector: '[jlmScrollTop]'

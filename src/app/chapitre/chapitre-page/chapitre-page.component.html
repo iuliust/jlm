@@ -2,7 +2,6 @@
 
 	<header>
 		<h1 class="chapitre--titre hpad" [innerHTML]="chapitre?.titre"></h1>
-
 	</header>
 
 	<section class="avant-propos hpad">
@@ -13,6 +12,8 @@
 			<p *ngFor="let paragraphe of chapitre?.introduction" [innerHTML]="paragraphe"></p>
 		</blockquote>
 	</section>
+
+	<jlm-font-size></jlm-font-size>
 
 	<ol class="liste-sections">
 		<li *ngFor="let section of chapitre?.sections">

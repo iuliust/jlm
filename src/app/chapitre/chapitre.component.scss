@@ -1,0 +1,28 @@
+:host {
+    display: flex;
+    flex-direction: column;
+}
+
+.bande {
+    background-color: var(--theme-secondary-color);
+    color: white;
+    display: flex;
+    margin: 1em;
+
+    &:nth-of-type(even) {
+        flex-direction: row;
+    }
+    &:nth-of-type(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .maxime {
+        flex: 10 1 450px;
+        font-weight: normal;
+        font-size: 1.2em;
+        padding: 1em;
+    }
+    .grow {
+        flex: 3 1 20px;
+    }
+}

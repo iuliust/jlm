@@ -1,0 +1,17 @@
+<md-toolbar color="primary">
+	<button md-icon-button (click)="toggleSidenav()"><md-icon>menu</md-icon></button>
+  <span>L'avenir en commun</span>
+</md-toolbar>
+<md-sidenav-layout>
+	<md-sidenav #nav>
+		<jlm-app-navigation></jlm-app-navigation>
+	</md-sidenav>
+	<div>
+		<aside>
+			<router-outlet name="encart"></router-outlet>
+		</aside>
+		<main>
+			<router-outlet></router-outlet>
+		</main>
+	</div>
+</md-sidenav-layout>
