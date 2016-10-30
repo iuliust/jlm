@@ -1,28 +1,31 @@
 /* tslint:disable:no-unused-variable */
-// import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-// import { By } from '@angular/platform-browser';
-// import { DebugElement } from '@angular/core';
 
-// import { AppNavigationComponent } from './app-navigation.component';
+import { RouterTestingModule } from '@angular/router/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
+import { DebugElement } from '@angular/core';
 
-// describe('AppNavigationComponent', () => {
-//   let component: AppNavigationComponent;
-//   let fixture: ComponentFixture<AppNavigationComponent>;
+import { AppNavigationComponent } from './app-navigation.component';
 
-//   beforeEach(async(() => {
-//     TestBed.configureTestingModule({
-//       declarations: [ AppNavigationComponent ]
-//     })
-//     .compileComponents();
-//   }));
+describe('AppNavigationComponent', () => {
+  let component: AppNavigationComponent;
+  let fixture: ComponentFixture<AppNavigationComponent>;
 
-//   beforeEach(() => {
-//     fixture = TestBed.createComponent(AppNavigationComponent);
-//     component = fixture.componentInstance;
-//     fixture.detectChanges();
-//   });
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+        imports: [ RouterTestingModule ],
+      declarations: [ AppNavigationComponent ]
+    })
+    .compileComponents();
+  }));
 
-//   it('should create', () => {
-//     expect(component).toBeTruthy();
-//   });
-// });
+  beforeEach(() => {
+    fixture = TestBed.createComponent(AppNavigationComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

@@ -6,9 +6,8 @@ import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
 import { FontSizeComponent } from './font-size.component';
-import { PreferencesService } from '../shared';
-import { click } from '../../testing';
-
+import { PreferencesService } from '../../shared';
+import { click } from '../../../testing';
 
 describe('FontSizeComponent', () => {
     let fixture: ComponentFixture<FontSizeComponent>;
@@ -49,9 +48,9 @@ describe('FontSizeComponent', () => {
     });
 
     it('should display three buttons to change the font size', () => {
-        expect(buttons.length).toEqual(3);
+        expect(buttons.length).toEqual(2);
         const buttonsContent: string[] = buttons.map(b => b.textContent);
-        expect(buttonsContent).toEqual(['A+ ', 'A- ', 'refresh ']);
+        expect(buttonsContent).toEqual(['A+', 'A-']);
     });
 
     it('clicking the first button should increment the font size', () => {
@@ -64,12 +63,6 @@ describe('FontSizeComponent', () => {
         expect(injectedPreferencesService.fontSize).toEqual(1);
         click(buttons[1]);
         expect(injectedPreferencesService.fontSize).toEqual(1 - .1);
-    });
-
-    it('clicking the third button should reset the font size', () => {
-        expect(injectedPreferencesService.fontSize).toEqual(1);
-        click(buttons[2]);
-        expect(injectedPreferencesService.fontSize).toEqual(1);
     });
 
 });

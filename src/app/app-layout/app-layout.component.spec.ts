@@ -1,9 +1,17 @@
 /* tslint:disable:no-unused-variable */
+import { RouterTestingModule } from '@angular/router/testing';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import { MaterialRootModule } from '@angular/material';
+import { Component, DebugElement } from '@angular/core';
 
 import { AppLayoutComponent } from './app-layout.component';
+
+@Component({
+    selector: 'jlm-app-navigation',
+    template: ''
+})
+class AppNavigationStubComponent {}
 
 describe('AppLayoutComponent', () => {
   let component: AppLayoutComponent;
@@ -11,7 +19,8 @@ describe('AppLayoutComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AppLayoutComponent ]
+      imports: [ MaterialRootModule, RouterTestingModule ],
+      declarations: [ AppLayoutComponent, AppNavigationStubComponent ]
     })
     .compileComponents();
   }));
