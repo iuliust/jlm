@@ -13,6 +13,9 @@ iuliust
 
 ## À destination des développeurs.
 
+Attention, quand j'installe les dépendances avec `yarn install`, la compilation Ahead-of-Time ne fonctionne pas et rencontre des problèmes divers.
+En revanche, quand j'installe les dépendances avec `npm install`, cette dernière fonctionne sans poser de problème.
+
 L'autre but de ce site est de mettre en avant la pile technologique la plus moderne possible. C'est une véritable défi.
 Voici la pile que j'espère réussir à implémenter :
 côté front :
