@@ -1,58 +1,28 @@
 :host {
-	display: block;
+    display: flex;
+    flex-direction: column;
 }
 
-.chapitre--titre {
-	font-weight: normal;
-}
+.bande {
+    background-color: var(--theme-secondary-color);
+    color: white;
+    display: flex;
+    margin: 1em;
 
-.avant-propos {
-	background-color: var(--secondary-background-color);
-	padding: 1em;
+    &:nth-of-type(even) {
+        flex-direction: row;
+    }
+    &:nth-of-type(odd) {
+        flex-direction: row-reverse;
+    }
 
-	blockquote {
-		font-style: italic;
-		margin: 0;
-
-		p {
-			margin-top: 2em;
-			text-align: justify;
-
-			&:first-of-type::before {
-				content: "«";
-			}
-			&:last-of-type::after {
-				content: "»";
-			}
-		}
-	}
-}
-
-sup.eme {
-	vertical-align: text-top;
-}
-
-article.section {
-	padding: 1em;
-	font-size: 1.1em;
-	background-color: white;
-	margin: 1em 0;
-
-	.titre-section {
-		margin: 0;
-		font-weight: normal;
-	}
-
-	p {
-		text-align: justify;
-		font-style: italic;
-		margin-bottom: 1em;
-		line-height: 1.2em;
-	}
-
-	ul {
-		text-align: justify;
-		-webkit-padding-start: 40px;
-		-moz-padding-start: 40px;
-	}
+    .maxime {
+        flex: 10 1 450px;
+        font-weight: normal;
+        font-size: 1.2em;
+        padding: 1em;
+    }
+    .grow {
+        flex: 3 1 20px;
+    }
 }

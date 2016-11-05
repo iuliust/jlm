@@ -1,29 +1,22 @@
+@import '../form-factors.scss';
+@import '../colors.scss';
+
+
 :host {
+	// couleur de fond du body
+	--background-primary-color: $background-primary-color;
+
+	// couleur de fond des avant-propos en début de chapitre
+	--background-secondary-color: $background-secondary-color;
+
+	--theme-primary-color: $theme-primary-color;
+	--theme-secondary-color: $theme-secondary-color;
+
+	background-color: var(--background-primary-color);
+
 	display: flex;
 	flex-direction: column;
-	width: 800px;
 	margin: auto;
+	min-height: 100vh;
 }
 
-h1 {
-	font-weight: normal;
-}
-
-div {
-	display: flex;
-	flex-direction: row;
-	position: relative;
-
-	main {
-		display: flex;
-		flex: 1;
-		flex-flow: column;
-	}
-
-	aside {
-		position: sticky;
-		margin-left: 10px;
-		top: 10px;
-		align-self: flex-start;
-	}
-}

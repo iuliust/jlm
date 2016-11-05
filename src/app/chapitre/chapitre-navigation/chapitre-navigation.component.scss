@@ -1,0 +1,68 @@
+@import '../../../form-factors.scss';
+
+:host {
+	display: block;
+	position: sticky;
+	top: 0px;
+	z-index: 2;
+	// background-color: var(--theme-primary-color);
+	// box-shadow: 0 0px 9px 1px hsla(0, 0%, 0%, 0.6);
+}
+
+ul {
+	display: flex;
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+	height: 50px;
+
+	li {
+		// color: white;
+		display: flex;
+
+		&.phi {
+			a span {
+				font-size: 1.2em;
+				transform: translateY(-4px);
+			}
+		}
+
+		&.active-link {
+			color: black;
+			text-decoration: underline;
+		}
+
+		a {
+			color: inherit;
+			display: flex;
+			padding: 0 1em;
+			text-decoration: none;
+
+			&:hover {
+				background-color: hsla(0%, 0%, 20, .2);
+				text-decoration: underline;
+			}
+
+			.numero {
+				margin: auto;
+			}
+		}
+	}
+}
+
+
+@media (max-width: $xs-max-width) {
+}
+
+@media (min-width: $sm-max-width) {
+	ul {
+		li {
+			.phi {
+				display: none;
+			}
+			.titre {
+				display: block;
+			}
+		}
+	}
+}

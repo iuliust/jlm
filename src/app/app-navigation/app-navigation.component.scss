@@ -1,0 +1,13 @@
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li a {
+    display: block;
+    padding: .5em 1em;
+
+    &:hover {
+        background-color: hsla(100%, 100%, 0, .1);
+    }
+}

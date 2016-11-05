@@ -1,5 +1,23 @@
+@import '../../form-factors.scss';
+
 :host {
-	background-color: var(--secondary-background-color);
 	display: block;
-	padding: 8px 1em;
+}
+
+[jlmScrollTop] {
+	color: hsl(190, 100%, 36%);
+	color: var(--theme-primary-color);
+	cursor: pointer;
+	text-decoration: underline;
+
+	&:active {
+		color: hsl(190, 100%, 36%);
+		color: var(--theme-primary-color);
+	}
+}
+
+@media (min-width: $sm-max-width) {
+	:host {
+		border-right: 1px dashed black;
+	}
 }

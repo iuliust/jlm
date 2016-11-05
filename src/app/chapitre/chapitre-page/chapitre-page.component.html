@@ -1,0 +1,46 @@
+<div [style.fontSize.em]="preferences.fontSize" *ngIf="chapitre">
+
+	<header>
+		<h1 class="chapitre--titre hpad" [innerHTML]="chapitre?.titre"></h1>
+	</header>
+
+	<section class="avant-propos hpad">
+		<p class="citation-auteur">
+			Jean-Luc Mélenchon :
+		</p>
+		<blockquote>
+			<p *ngFor="let paragraphe of chapitre?.introduction" [innerHTML]="paragraphe"></p>
+		</blockquote>
+	</section>
+
+	<div class="affichage-options hpad">
+		<jlm-font-size></jlm-font-size>
+	</div>
+
+	<ol class="liste-sections">
+		<li *ngFor="let section of chapitre?.sections">
+			<section class="section hpad">
+				<h2 class="titre-section" [innerHTML]="section?.titre"></h2>
+				<p class="introduction" *ngIf="section?.introduction" [innerHTML]="section?.introduction"></p>
+				<ol>
+					<li *ngFor="let mesure of section?.mesures">
+						<p [innerHTML]="mesure.texte"></p>
+						<ul *ngIf="mesure?.mesures">
+							<li *ngFor="let sousMesure of mesure?.mesures">
+								<p [innerHTML]="sousMesure.texte"></p>
+							</li>
+						</ul>
+					</li>
+				</ol>
+				<div *ngIf="section?.outro">
+					<p *ngFor="let paragraphe of section.outro" [innerHTML]="paragraphe"></p>
+				</div>
+			</section>
+		</li>
+	</ol>
+
+	<footer>
+		<jlm-chapitre-navigation></jlm-chapitre-navigation>
+		<button md-button jlmScrollTop>Haut de page</button>
+	</footer>
+</div>

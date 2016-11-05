@@ -1,0 +1,21 @@
+:host {
+    display: block;
+}
+
+[md-icon-button]:not(:last-of-type) {
+    margin-right: 1em;
+}
+
+button {
+    background-color: hsl(34, 57%, 70%);
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 4px 12px;
+    font-family: monospace;
+    border-radius: 2px;
+
+    &:focus {
+        outline: none;
+    }
+}

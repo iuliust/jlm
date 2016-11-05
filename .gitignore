@@ -3,6 +3,7 @@
 # compiled output
 /dist
 /tmp
+/aot
 
 # dependencies
 /node_modules
@@ -24,6 +25,9 @@
 npm-debug.log
 testem.log
 /typings
+yarn.lock
+yarn-error.log
+/spec
 
 # e2e
 /e2e/*.js

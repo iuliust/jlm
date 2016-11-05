@@ -1,1 +1,13 @@
-<div #include></div>
+<section>
+  <h1>L'avenir en commun</h1>
+  <article class="bande" *ngFor="let maxime of maximes; let index = index">
+    <h2 class="maxime">
+    <!--<h2 class="maxime" [style.backgroundImage]="'url(' + maxime.imageUrl + ')'">-->
+      <a [routerLink]="['./', index + 1]">
+        <span class="probleme">{{maxime.probleme}}</span>
+        <span class="solution">{{maxime.solution}}</span>
+      </a>
+    </h2>
+    <div class="grow"></div>
+  </article>
+</section>

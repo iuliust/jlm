@@ -1,71 +1,60 @@
-import {
-	NgModule,
-	Component,
-	OnInit,
-	AfterViewInit,
-	ViewChild,
-	ViewContainerRef,
-	Compiler,
-	ComponentFactory,
-	ViewEncapsulation } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Http, Response } from '@angular/http';
-import { ActivatedRoute, Params } from '@angular/router';
-import 'rxjs/add/operator/toPromise';
+import { Component, OnInit } from '@angular/core';
 
-import { TemplateDirectivesModule } from '../template-directives/template-directives.module';
-import { IntersectionObserverService } from '../template-directives/intersection-observer.service';
+export interface Maxime {
+  probleme: string;
+  solution: string;
+  imageUrl: string;
+}
 
 @Component({
   selector: 'jlm-chapitre',
   templateUrl: './chapitre.component.html',
   styleUrls: ['./chapitre.component.scss']
 })
-export class ChapitreComponent implements OnInit, AfterViewInit {
-	@ViewChild('include', { read: ViewContainerRef }) includeDiv: ViewContainerRef;
+export class ChapitreComponent implements OnInit {
+  maximes: any[] = [];
 
-  constructor(
-		private route : ActivatedRoute,
-		private http: Http,
-    private viewContainer: ViewContainerRef,
-		private compiler: Compiler
-	) { }
+  constructor() { }
 
-	ngAfterViewInit() {
-		this.route.params.forEach((params: Params) => {
-			const chapitreId = +params['chapitreId'];
-			this.http.get(`/assets/programme/chapitre0${chapitreId}.html`)
-			.toPromise()
-			.then((res: Response) => {
-				this.injectTemplate(res.text());
-			});
-		});
-	}
+  ngOnInit() {
+    let maximes: any[] = [
+      {
+        probleme: 'Face à la crise démocratique',
+        solution: 'convoquer l’assemblée constituante de la 6ème République',
+        imageUrl: '/assets/images/chapitre1.jpg'
+      },
+      {
+        probleme: 'Face au chômage et à l’urgence sociale',
+        solution: 'partager les richesses, mettre au pas la finance',
+        imageUrl: '/assets/images/chapitre1.jpg'
+      },
+      {
+        probleme: 'Face à la crise climatique',
+        solution: 'la planification écologique',
+        imageUrl: '/assets/images/chapitre1.jpg'
+      },
+      {
+        probleme: 'Face à la crise européenne',
+        solution: 'sortir des traités européens',
+        imageUrl: '/assets/images/chapitre1.jpg'
+      },
+      {
+        probleme: 'Face à la guerre',
+        solution: 'instaurer l’indépendance de la France au service de la paix',
+        imageUrl: '/assets/images/chapitre1.jpg'
+      },
+      {
+        probleme: 'Face à la grande régression',
+        solution: 'choisir l’objectif du progrès humain',
+        imageUrl: '/assets/images/chapitre1.jpg'
+      },
+      {
+        probleme: 'Face au déclinisme',
+        solution: 'porter la France aux frontières de l’Humanité',
+        imageUrl: '/assets/images/chapitre1.jpg'
+      }
+    ];
+    this.maximes = maximes;
+  }
 
-	injectTemplate(template: string) {
-		this.includeDiv.clear();
-
-		@Component({
-			template: template,
-			styleUrls: ['./chapitre.component.scss']
-		})
-		class TemplateComponent {}
-
-		@NgModule({
-			declarations: [TemplateComponent],
-			imports: [
-				TemplateDirectivesModule,
-				CommonModule
-			]
-		})
-		class TemplateModule {}
-
-		const module = this.compiler.compileModuleAndAllComponentsSync(TemplateModule);
-		const factory = module.componentFactories.find((comp: ComponentFactory<any>) => {
-			return comp.componentType === TemplateComponent
-		});
-		this.includeDiv.createComponent(factory);
-}
-
-	ngOnInit() {}
 }

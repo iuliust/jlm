@@ -13,7 +13,7 @@
     "forin": true,
     "indent": [
       true,
-      "spaces"
+      "space"
     ],
     "label-position": true,
     "label-undefined": true,
@@ -107,6 +107,7 @@
     "use-life-cycle-interface": true,
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
-    "directive-class-suffix": true
+		"templates-use-public": true,
+		"invoke-injectable": true
   }
 }

@@ -1,8 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
 // @import url('https://fonts.googleapis.com/css?family=Noto+Serif');
 
+@import "./theme.scss";
+
 body {
-	--main-background-color: hsl(0, 0%, 96%);
-	--secondary-background-color: hsl(0, 0%, 83%);
-	background-color: var(--main-background-color);
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1em;
+}
+
+a {
+	color: inherit;
+}
+
+sup.eme {
+	line-height: 1em;
+}
+
+abbr {
+	text-decoration: underline dashed hsl(190, 100%, 36%);
+	text-decoration: underline dashed var(--theme-primary-color);
+	text-underline-position: under;
+
+	cursor: help;
 }
