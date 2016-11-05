@@ -10,15 +10,14 @@ import { Title } from '@angular/platform-browser';
 })
 export class AppComponent {
 
-	title: string = `L'avenir en commun`;
+	title: string = 'L\'avenir en commun';
 
 	constructor(private titleService: Title) {
-		this.setTitle(`L'avenir en commun`);
+		this.setTitle('L\'avenir en commun');
 	}
 
 	public setTitle(title: string) {
 		this.titleService.setTitle(title);
 	}
-
 
 }

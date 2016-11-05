@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-interface Maxime {
+export interface Maxime {
   probleme: string;
   solution: string;
   imageUrl: string;
@@ -12,12 +12,12 @@ interface Maxime {
   styleUrls: ['./chapitre.component.scss']
 })
 export class ChapitreComponent implements OnInit {
-  maximes: Maxime[] = [];
+  maximes: any[] = [];
 
   constructor() { }
 
   ngOnInit() {
-    let maximes: Maxime[] = [
+    let maximes: any[] = [
       {
         probleme: 'Face à la crise démocratique',
         solution: 'convoquer l’assemblée constituante de la 6ème République',

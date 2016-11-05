@@ -1,5 +1,6 @@
 {
   "name": "jlm",
+  "private": true,
   "version": "0.0.0",
   "license": "MIT",
   "angular-cli": {},
@@ -10,7 +11,6 @@
     "pree2e": "webdriver-manager update",
     "e2e": "protractor"
   },
-  "private": true,
   "dependencies": {
     "@angular/common": "~2.1.2",
     "@angular/compiler": "~2.1.2",
@@ -30,7 +30,7 @@
     "zone.js": "^0.6.26"
   },
   "devDependencies": {
-    "@types/jasmine": "^2.5.36",
+    "@types/jasmine": "^2.5.37",
     "@types/node": "^6.0.46",
     "angular-cli": "1.0.0-beta.19-3",
     "codelyzer": "1.0.0-beta.3",
@@ -45,6 +45,6 @@
     "protractor": "4.0.10",
     "ts-node": "1.6.1",
     "tslint": "3.15.1",
-    "typescript": "~2.0.6"
+    "typescript": "~2.0.7"
   }
 }

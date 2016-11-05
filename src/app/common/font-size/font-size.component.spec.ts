@@ -24,7 +24,9 @@ describe('FontSizeComponent', () => {
 
         TestBed.configureTestingModule({
             declarations: [ FontSizeComponent ],
-            imports: [ MaterialRootModule ],
+            imports: [
+                MaterialRootModule
+            ],
             providers: [ PreferencesService ]
         });
 
