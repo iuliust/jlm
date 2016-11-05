@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { MaterialModule } from '@angular/material';
+// je laisse ces commentaires pour garder une trace des modules material utilisés dans cette application
 // import { MdCoreModule } from '@angular/material/core';
 // import { MdSidenavModule } from '@angular/material/sidenav';
 // import { MdToolbarModule } from '@angular/material/toolbar';
