@@ -16,9 +16,9 @@
     ]
   },
   "files": [
-    "main.ts"
+    "./main.ts"
   ],
   "filesGlob": [
-    "**/*.module.ts"
+    "./**/*.module.ts"
   ]
 }

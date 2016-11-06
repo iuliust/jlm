@@ -10,6 +10,9 @@
     "noImplicitAny": false,
     "outDir": "../aot",
     "removeComments": false,
+    "rootDirs": [
+      "../aot"
+    ],
     "sourceMap": true,
     "suppressImplicitAnyIndexErrors": true,
     "target": "es5",
@@ -18,8 +21,10 @@
     ]
   },
   "files": [
-    "app/app.module.ts",
-    "main.ts"
+    "./main-ahead.ts"
+  ],
+  "filesGlob": [
+    "./**/*.module.ts"
   ],
   "angularCompilerOptions": {
     "genDir": "../aot",
