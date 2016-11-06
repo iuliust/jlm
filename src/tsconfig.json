@@ -15,8 +15,10 @@
       "../node_modules/@types"
     ]
   },
-  "filesGlob": [
-    "**/*.module.ts",
+  "files": [
     "main.ts"
+  ],
+  "filesGlob": [
+    "**/*.module.ts"
   ]
 }
