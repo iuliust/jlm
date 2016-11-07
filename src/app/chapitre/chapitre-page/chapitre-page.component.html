@@ -1,4 +1,14 @@
-<div [style.fontSize.em]="preferences.fontSize" *ngIf="chapitre">
+
+<div class="affichage-options hpad">
+	<jlm-font-size></jlm-font-size>
+</div>
+
+<div class="loading-screen hpad" *ngIf="loading">
+	<p>chargement du chapitre en cours...</p>
+	<md-progress-bar mode="query"></md-progress-bar>
+</div>
+
+<div [style.fontSize.em]="(preferences | async).fontSize" *ngIf="chapitre">
 
 	<header>
 		<h1 class="chapitre--titre hpad" [innerHTML]="chapitre?.titre"></h1>
@@ -12,10 +22,6 @@
 			<p *ngFor="let paragraphe of chapitre?.introduction" [innerHTML]="paragraphe"></p>
 		</blockquote>
 	</section>
-
-	<div class="affichage-options hpad">
-		<jlm-font-size></jlm-font-size>
-	</div>
 
 	<ol class="liste-sections">
 		<li *ngFor="let section of chapitre?.sections">

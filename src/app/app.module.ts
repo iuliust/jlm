@@ -2,8 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
 import { MaterialModule } from '@angular/material';
+
+import { StoreModule } from '@ngrx/store';
 // je laisse ces commentaires pour garder une trace des modules material utilisés dans cette application
 // import { MdCoreModule } from '@angular/material/core';
 // import { MdSidenavModule } from '@angular/material/sidenav';
@@ -14,7 +15,8 @@ import { MaterialModule } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 import { TemplateDirectivesModule } from './template-directives/template-directives.module';
 import { ChapitreModule } from './chapitre';
-import { CommonModule } from './common';
+import { SharedModule } from './shared';
+import { preferencesReducer } from './shared';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -22,9 +24,7 @@ import { EncartFiltresComponent } from './encart-filtres/encart-filtres.componen
 import { AppNavigationComponent } from './app-navigation/app-navigation.component';
 import { AppLayoutComponent } from './app-layout/app-layout.component';
 
-
 import { WindowRef } from './shared';
-import { PreferencesService } from './shared/preferences.service';
 
 @NgModule({
 	declarations: [
@@ -33,18 +33,20 @@ import { PreferencesService } from './shared/preferences.service';
 		EncartFiltresComponent,
 		AppNavigationComponent,
 		AppLayoutComponent
+
 	],
 	imports: [
 		// modules de @angular
 		BrowserModule,
 		FormsModule,
 		HttpModule,
+		StoreModule.provideStore({ preferences: preferencesReducer }),
 
 		// modules maison
+		SharedModule,
 		AppRoutingModule,
 		TemplateDirectivesModule,
 		ChapitreModule,
-		CommonModule,
 
 		// modules Material Design
 		MaterialModule.forRoot(),
@@ -54,7 +56,7 @@ import { PreferencesService } from './shared/preferences.service';
 		// MdIconModule.forRoot(),
 		// MdButtonModule.forRoot()
 	],
-	providers: [ WindowRef, PreferencesService ],
+	providers: [ WindowRef ],
 	bootstrap: [ AppComponent ]
 })
 export class AppModule { }

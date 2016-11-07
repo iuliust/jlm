@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { CommonModule  as NgCommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common';
+import { MaterialModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
 
-import { CommonModule as JlmCommonModule } from '../common';
-import { ChapitreService } from '../shared';
+import { SharedModule, ChapitreService } from '../shared';
 
 import { ChapitreComponent } from './chapitre.component';
 import { ChapitrePageComponent } from './chapitre-page/chapitre-page.component';
@@ -11,9 +11,10 @@ import { ChapitreNavigationComponent } from './chapitre-navigation/chapitre-navi
 
 @NgModule({
   imports: [
-    NgCommonModule,
+    CommonModule,
     RouterModule,
-    JlmCommonModule
+    MaterialModule,
+    SharedModule
   ],
   declarations: [ ChapitreComponent, ChapitrePageComponent, ChapitreNavigationComponent],
   exports: [ ChapitreComponent, ChapitrePageComponent, ChapitreNavigationComponent ],

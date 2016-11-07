@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 import { FontSizeComponent } from './font-size/font-size.component';
 import { ScrollTopDirective } from './scroll-top/scroll-top.directive';
 
 @NgModule({
-  imports: [],
+  imports: [
+    CommonModule
+  ],
   declarations: [
     FontSizeComponent,
     ScrollTopDirective
@@ -12,6 +15,7 @@ import { ScrollTopDirective } from './scroll-top/scroll-top.directive';
   exports: [
     FontSizeComponent,
     ScrollTopDirective
-  ]
+  ],
+  providers: [  ]
 })
-export class CommonModule { }
+export class SharedModule { }

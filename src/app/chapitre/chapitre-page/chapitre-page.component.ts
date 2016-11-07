@@ -1,12 +1,11 @@
-import {
-	Component,
-	OnInit
-} from '@angular/core';
+import { Component,	OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import 'rxjs/add/operator/toPromise';
 
-import { PreferencesService } from '../../shared';
-import { ChapitreService } from '../../shared';
+import { Observable } from 'rxjs';
+import { Store } from '@ngrx/store';
+
+import { Preferences, ChapitreService, AppState } from '../../shared';
 
 @Component({
   selector: 'jlm-chapitre-page',
@@ -15,18 +14,25 @@ import { ChapitreService } from '../../shared';
 })
 export class ChapitrePageComponent implements OnInit {
   chapitre: any;
+  preferences: Observable<Preferences>;
+	loading: boolean = true;
 
   constructor(
 		private route: ActivatedRoute,
-		private preferences: PreferencesService,
-		private chapitreService: ChapitreService
+		private chapitreService: ChapitreService,
+		private store: Store<AppState>
 	) { }
 
 	ngOnInit() {
+		this.preferences = this.store.select<Preferences>('preferences');
 		this.route.params.forEach((params: Params) => {
 			const chapitreId = +params['chapitreId'];
+			this.loading = true;
 			this.chapitreService.getChapitre(chapitreId)
-				.then(chapitre => this.chapitre = chapitre);
+				.then(chapitre => {
+					this.loading = false;
+					this.chapitre = chapitre;
+				});
 		});
 	}
 }
