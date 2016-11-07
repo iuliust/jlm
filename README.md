@@ -24,7 +24,7 @@ côté front :
 - [ ] Angular2 i18n (internationnalization) pour que l'interface du site soit également disponible en anglais, voire d'autres langages que je sais parler (allemand, italien...)
 - [ ] Angular2/platform-webworker
 - [x] Ahead-of-Time compilation
-- [ ] ngrx/store pour gérer tous les états de l'application
+- [x] ngrx/store pour gérer tous les états de l'application
 - [ ] ngrx/db (si besoin, et si ils font une doc)
 - [x] Material Design pour... bah, le design, évidemment !
 - [ ] PWA (Progressive Web App)

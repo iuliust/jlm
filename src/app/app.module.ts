@@ -12,19 +12,22 @@ import { StoreModule } from '@ngrx/store';
 // import { MdIconModule } from '@angular/material/icon';
 // import { MdButtonModule } from '@angular/material/button';
 
+// importation des modules maison
 import { AppRoutingModule } from './app-routing.module';
-import { TemplateDirectivesModule } from './template-directives/template-directives.module';
 import { ChapitreModule } from './chapitre';
 import { SharedModule } from './shared';
-import { preferencesReducer } from './shared';
 
+// importation des services maison
+import { preferencesReducer, IntersectionObserverService } from './shared';
+import { WindowRef } from './shared';
+
+// importation des composants maison
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { EncartFiltresComponent } from './encart-filtres/encart-filtres.component';
 import { AppNavigationComponent } from './app-navigation/app-navigation.component';
 import { AppLayoutComponent } from './app-layout/app-layout.component';
 
-import { WindowRef } from './shared';
 
 @NgModule({
 	declarations: [
@@ -45,7 +48,6 @@ import { WindowRef } from './shared';
 		// modules maison
 		SharedModule,
 		AppRoutingModule,
-		TemplateDirectivesModule,
 		ChapitreModule,
 
 		// modules Material Design
@@ -56,7 +58,7 @@ import { WindowRef } from './shared';
 		// MdIconModule.forRoot(),
 		// MdButtonModule.forRoot()
 	],
-	providers: [ WindowRef ],
+	providers: [ WindowRef, IntersectionObserverService ],
 	bootstrap: [ AppComponent ]
 })
 export class AppModule { }

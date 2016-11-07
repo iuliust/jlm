@@ -1,20 +1,4 @@
-import {
-	Component,
-	// OnInit,
-	// OnDestroy,
-	AfterViewInit,
-	// ViewChild,
-	HostBinding,
-	ElementRef,
-	// EmbeddedViewRef,
-	trigger,
-	state,
-	style,
-	transition,
-	animate,
-	NgZone,
-	// ViewEncapsulation
-} from '@angular/core';
+import { Component, AfterViewInit, HostBinding, ElementRef, trigger, state, style, transition, animate, NgZone } from '@angular/core';
 
 @Component({
   selector: 'jlm-animation-test',
