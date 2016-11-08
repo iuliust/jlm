@@ -8,6 +8,7 @@ import { SharedModule, ChapitreService } from '../shared';
 import { ChapitreComponent } from './chapitre.component';
 import { ChapitrePageComponent } from './chapitre-page/chapitre-page.component';
 import { ChapitreNavigationComponent } from './chapitre-navigation/chapitre-navigation.component';
+import { MesureComponent } from './mesure/mesure.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,12 @@ import { ChapitreNavigationComponent } from './chapitre-navigation/chapitre-navi
     MaterialModule,
     SharedModule
   ],
-  declarations: [ ChapitreComponent, ChapitrePageComponent, ChapitreNavigationComponent],
+  declarations: [
+    ChapitreComponent,
+    ChapitrePageComponent,
+    ChapitreNavigationComponent,
+    MesureComponent
+  ],
   exports: [ ChapitreComponent, ChapitrePageComponent, ChapitreNavigationComponent ],
   providers: [ ChapitreService ]
 })

@@ -1,0 +1,11 @@
+:host {
+    &[nesting="0"] > ul {
+        list-style-type: disc;
+    }
+    &[nesting="1"] > ul {
+        list-style-type: circle;
+    }
+    &[nesting="2"] > ul {
+        list-style-type: square;
+    }
+}

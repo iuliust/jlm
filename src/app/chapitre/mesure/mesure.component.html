@@ -1,0 +1,6 @@
+<p [innerHTML]="mesure.texte"></p>
+<ul *ngIf="mesure?.mesures?.length">
+  <li *ngFor="let sousMesure of mesure.mesures">
+    <jlm-mesure [mesure]="sousMesure" [niveauImbrication]="niveauImbrication + 1"></jlm-mesure>
+  </li>
+</ul>

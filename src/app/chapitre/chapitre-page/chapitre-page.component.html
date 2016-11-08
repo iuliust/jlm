@@ -3,50 +3,48 @@
 	<jlm-font-size></jlm-font-size>
 </div>
 
-<div class="loading-screen hpad" *ngIf="loading">
-	<p>chargement du chapitre en cours...</p>
-	<md-progress-bar mode="query"></md-progress-bar>
-</div>
+<ng-container [ngSwitch]="loading">
+	<div *ngSwitchCase="true" class="loading-screen hpad">
+		<p>chargement du chapitre en cours...</p>
+		<md-progress-bar mode="query"></md-progress-bar>
+	</div>
 
-<div [style.fontSize.em]="(preferences | async).fontSize" *ngIf="chapitre">
+	<div *ngSwitchCase="false" [style.fontSize.em]="(preferences | async).fontSize">
 
-	<header>
-		<h1 class="chapitre--titre hpad" [innerHTML]="chapitre?.titre"></h1>
-	</header>
+		<header>
+			<h1 class="chapitre--titre hpad" [innerHTML]="chapitre?.titre"></h1>
+		</header>
 
-	<section class="avant-propos hpad">
-		<p class="citation-auteur">
-			Jean-Luc Mélenchon :
-		</p>
-		<blockquote>
-			<p *ngFor="let paragraphe of chapitre?.introduction" [innerHTML]="paragraphe"></p>
-		</blockquote>
-	</section>
+		<section class="avant-propos hpad">
+			<p class="citation-auteur">
+				Jean-Luc Mélenchon :
+			</p>
+			<blockquote>
+				<p *ngFor="let paragraphe of chapitre?.introduction" [innerHTML]="paragraphe"></p>
+			</blockquote>
+		</section>
 
-	<ol class="liste-sections">
-		<li *ngFor="let section of chapitre?.sections">
-			<section class="section hpad">
-				<h2 class="titre-section" [innerHTML]="section?.titre"></h2>
-				<p class="introduction" *ngIf="section?.introduction" [innerHTML]="section?.introduction"></p>
-				<ol>
-					<li *ngFor="let mesure of section?.mesures">
-						<p [innerHTML]="mesure.texte"></p>
-						<ul *ngIf="mesure?.mesures">
-							<li *ngFor="let sousMesure of mesure?.mesures">
-								<p [innerHTML]="sousMesure.texte"></p>
-							</li>
-						</ul>
-					</li>
-				</ol>
-				<div *ngIf="section?.outro">
-					<p *ngFor="let paragraphe of section.outro" [innerHTML]="paragraphe"></p>
-				</div>
-			</section>
-		</li>
-	</ol>
+		<ol class="liste-sections">
+			<li *ngFor="let section of chapitre?.sections">
+				<section class="section hpad">
+					<h2 class="titre-section" [innerHTML]="section?.titre"></h2>
+					<p class="introduction" *ngIf="section?.introduction" [innerHTML]="section?.introduction"></p>
+					<ol *ngIf="section?.mesures?.length">
+						<li *ngFor="let mesure of section.mesures">
+							<jlm-mesure [mesure]="mesure"></jlm-mesure>
+						</li>
+					</ol>
+					<div *ngIf="section?.outro">
+						<p *ngFor="let paragraphe of section.outro" [innerHTML]="paragraphe"></p>
+					</div>
+				</section>
+			</li>
+		</ol>
 
-	<footer>
-		<jlm-chapitre-navigation></jlm-chapitre-navigation>
-		<button md-button jlmScrollTop>Haut de page</button>
-	</footer>
-</div>
+		<footer>
+			<jlm-chapitre-navigation></jlm-chapitre-navigation>
+			<button md-button jlmScrollTop>Haut de page</button>
+		</footer>
+	</div>
+</ng-container>
+

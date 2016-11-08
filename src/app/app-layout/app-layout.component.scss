@@ -7,6 +7,16 @@
 	flex: 1;
 }
 
+md-toolbar {
+	a {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
 md-sidenav-layout {
 	flex: 1;
 	background-color: inherit;
