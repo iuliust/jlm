@@ -36,7 +36,6 @@ import { AppLayoutComponent } from './app-layout/app-layout.component';
 		EncartFiltresComponent,
 		AppNavigationComponent,
 		AppLayoutComponent
-
 	],
 	imports: [
 		// modules de @angular

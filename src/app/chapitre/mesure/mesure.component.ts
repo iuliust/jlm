@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, HostBinding, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, Input, HostBinding } from '@angular/core';
 
 export class Mesure {
   texte: string;

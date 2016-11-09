@@ -13,9 +13,9 @@ import { Preferences, ChapitreService, AppState } from '../../shared';
   styleUrls: ['./chapitre-page.component.scss']
 })
 export class ChapitrePageComponent implements OnInit {
-  chapitre: any;
-  preferences: Observable<Preferences>;
-	loading: boolean = true;
+  private chapitre: any;
+  private preferences: Observable<Preferences>;
+	private loading: boolean = true;
 
   constructor(
 		private route: ActivatedRoute,

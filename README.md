@@ -22,19 +22,18 @@ côté front :
 - [x] Angular2 pour le framework front-end
 - [ ] Angular2 a11y (accessibility) pour que le site soit un modèle d'accessibilité, parce qu'il est toujours important de ne pas oublier nos amis malvoyants... Tout le monde n'a pas la chance d'avoir des yeux qui fonctionnent.
 - [ ] Angular2 i18n (internationnalization) pour que l'interface du site soit également disponible en anglais, voire d'autres langages que je sais parler (allemand, italien...)
-- [ ] Angular2/platform-webworker
+- [ ] Angular2/platform-webworker // angular-cli n'intègre pas encore cette fonctionnalité
 - [x] Ahead-of-Time compilation
 - [x] ngrx/store pour gérer tous les états de l'application
 - [ ] ngrx/db (si besoin, et si ils font une doc)
 - [x] Material Design pour... bah, le design, évidemment !
-- [ ] PWA (Progressive Web App)
-- [ ] Le site pourrait être une AMP (Accelerated Mobile Page), mais je ne sais pas si c'est vraiment compatible avec Angular
+- [ ] PWA (Progressive Web App) // à étudier
+- [ ] utiliser les ServiceWorker
 - [ ] images responsives
 - [ ] getUserMedia (ou la nouvelle spec, mais je ne l'ai pas encore étudiée)
 - [ ] Le site pourrait utiliser un système de notifications
-- [ ] Le site pourrait s'adapter à la luminosité ambiante (histoire de rigoler un coup)
+- [ ] Le site pourrait s'adapter à la luminosité ambiante (histoire de rigoler un coup) // seul Firefox gère cette API pour l'instant
 - [ ] utiliser le client GraphQL pour limiter les échanges client/serveur
-- [ ] utiliser les ServiceWorker
 - [ ] JWT (une intégration avec Auth0 ?)
 - [ ] Peut-être utiliser NativeScript pour déployer l'application sur le Play Store, Windows Universal, Linux, OSX, Windows, etc...
 
