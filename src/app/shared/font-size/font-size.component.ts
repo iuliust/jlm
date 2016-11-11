@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
 
-import { AppState, Preferences, INCREMENT_FONT_SIZE, DECREMENT_FONT_SIZE, RESET_FONT_SIZE } from '../';
+import { AppState, INCREMENT_FONT_SIZE, DECREMENT_FONT_SIZE, RESET_FONT_SIZE } from '../';
+import { Preferences } from '../models/preferences';
+import * as preferencesActions from '../actions/preferences';
 
 @Component({
   selector: 'jlm-font-size',
@@ -19,11 +21,11 @@ export class FontSizeComponent implements OnInit {
   }
 
   increment() {
-    this.store.dispatch({ type: INCREMENT_FONT_SIZE });
+    this.store.dispatch(new preferencesActions.IncrementFontSizeAction());
   }
 
   decrement() {
-    this.store.dispatch({ type: DECREMENT_FONT_SIZE });
+    this.store.dispatch(new preferencesActions.DecrementFontSizeAction());
   }
 
   reset() {

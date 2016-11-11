@@ -27,6 +27,7 @@ import { HomeComponent } from './home/home.component';
 import { EncartFiltresComponent } from './encart-filtres/encart-filtres.component';
 import { AppNavigationComponent } from './app-navigation/app-navigation.component';
 import { AppLayoutComponent } from './app-layout/app-layout.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { AppLayoutComponent } from './app-layout/app-layout.component';
 		HomeComponent,
 		EncartFiltresComponent,
 		AppNavigationComponent,
-		AppLayoutComponent
+		AppLayoutComponent,
+		PageNotFoundComponent
 	],
 	imports: [
 		// modules de @angular

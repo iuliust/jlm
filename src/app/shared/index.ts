@@ -4,7 +4,6 @@ export * from './animation-test.component';
 export * from './app-state';
 export * from './chapitre.service';
 export * from './intersection-observer.service';
-export * from './preferences';
 export * from './shared.module';
 export * from './reducers/preferences.reducer';
 export * from './window-ref.service';

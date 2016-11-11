@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ChapitrePageComponent, ChapitreComponent } from './chapitre';
 import { HomeComponent } from './home/home.component';
 import { EncartFiltresComponent } from './encart-filtres/encart-filtres.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 export const routes: Routes = [
 		{ path: '', component: HomeComponent },
@@ -19,7 +20,8 @@ export const routes: Routes = [
 					]
 				}
 			]
-		}
+		},
+		{ path: '**', component: PageNotFoundComponent }
 	];
 
 @NgModule({

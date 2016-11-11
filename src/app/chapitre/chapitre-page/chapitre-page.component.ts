@@ -5,7 +5,8 @@ import 'rxjs/add/operator/toPromise';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
 
-import { Preferences, ChapitreService, AppState } from '../../shared';
+import { ChapitreService, AppState } from '../../shared';
+import { Preferences } from '../../shared/models/preferences';
 
 @Component({
   selector: 'jlm-chapitre-page',
