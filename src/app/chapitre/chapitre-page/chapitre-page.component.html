@@ -3,6 +3,12 @@
 	<jlm-font-size></jlm-font-size>
 </div>
 
+<!--<ol style="list-style-position:inside;">
+	<li>
+		<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita repudiandae impedit, a.</h2>
+	</li>
+</ol>-->
+
 <ng-container [ngSwitch]="loading">
 	<div *ngSwitchCase="true" class="loading-screen hpad">
 		<p>chargement du chapitre en cours...</p>
@@ -24,21 +30,17 @@
 			</blockquote>
 		</section>
 
-		<ol class="liste-sections">
-			<li *ngFor="let section of chapitre?.sections">
-				<section class="section hpad">
-					<h2 class="titre-section" [innerHTML]="section?.titre"></h2>
-					<p class="introduction" *ngIf="section?.introduction" [innerHTML]="section?.introduction"></p>
-					<ol *ngIf="section?.mesures?.length">
-						<li *ngFor="let mesure of section.mesures">
-							<jlm-mesure [mesure]="mesure"></jlm-mesure>
-						</li>
-					</ol>
-					<div *ngIf="section?.outro">
-						<p *ngFor="let paragraphe of section.outro" [innerHTML]="paragraphe"></p>
-					</div>
-				</section>
-			</li>
+		<ol class="liste-sections hpad">
+			<article *ngFor="let section of chapitre?.sections" class="section">
+				<h2 class="titre-section" [innerHTML]="section?.titre"></h2>
+				<p class="introduction" *ngIf="section?.introduction" [innerHTML]="section?.introduction"></p>
+				<ol *ngIf="section?.mesures?.length">
+					<li *ngFor="let mesure of section.mesures">
+						<jlm-mesure [mesure]="mesure"></jlm-mesure>
+					</li>
+				</ol>
+				<p class="outro" *ngFor="let paragraphe of section?.outro" [innerHTML]="paragraphe"></p>
+			</article>
 		</ol>
 
 		<footer>

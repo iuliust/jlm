@@ -1,13 +1,6 @@
 import { Action } from '@ngrx/store';
 import { label } from '../util';
 
-
-// export enum PreferencesActionTypes {
-//     INCREMENT_FONT_SIZE,
-//     DECREMENT_FONT_SIZE,
-//     RESET_FONT_SIZE
-// }
-
 export const PreferencesActionTypes = {
     INCREMENT_FONT_SIZE: label('[Preferences] Increment Font Size'),
     DECREMENT_FONT_SIZE: label('[Preferences] Decrement Font Size'),
@@ -32,4 +25,6 @@ export class ResetFontSizeAction implements Action {
     constructor() { }
 }
 
-export type PreferencesActions = IncrementFontSizeAction | DecrementFontSizeAction | ResetFontSizeAction;
+export type PreferencesActions = IncrementFontSizeAction
+    | DecrementFontSizeAction
+    | ResetFontSizeAction;

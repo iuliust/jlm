@@ -26,14 +26,11 @@ export class ChapitrePageComponent implements OnInit {
 
 	ngOnInit() {
 		this.preferences = this.store.select<Preferences>('preferences');
-		this.route.params.forEach((params: Params) => {
+		this.route.params.forEach(async (params: Params) => {
 			const chapitreId = +params['chapitreId'];
 			this.loading = true;
-			this.chapitreService.getChapitre(chapitreId)
-				.then(chapitre => {
-					this.loading = false;
-					this.chapitre = chapitre;
-				});
+			this.chapitre = await this.chapitreService.getChapitre(chapitreId);
+			this.loading = false;
 		});
 	}
 }

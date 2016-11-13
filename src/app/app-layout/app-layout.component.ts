@@ -1,5 +1,6 @@
-import { Component, ViewChild, OnInit } from '@angular/core';
+import { Component, ViewChild, OnInit, HostBinding } from '@angular/core';
 import { MdSidenav } from '@angular/material/sidenav';
+import { LayoutActions } from '../shared/actions/layout';
 
 @Component({
   selector: 'jlm-app-layout',
@@ -27,6 +28,10 @@ export class AppLayoutComponent implements OnInit {
 		} else {
 			this.sidenavElement.close();
 		}
+	}
+
+	closeSidenav() {
+		// this.store.dispatch()
 	}
 
 }

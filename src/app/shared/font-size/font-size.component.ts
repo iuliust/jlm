@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
 
-import { AppState, INCREMENT_FONT_SIZE, DECREMENT_FONT_SIZE, RESET_FONT_SIZE } from '../';
+import { AppState } from '../';
 import { Preferences } from '../models/preferences';
 import * as preferencesActions from '../actions/preferences';
 
@@ -29,7 +29,7 @@ export class FontSizeComponent implements OnInit {
   }
 
   reset() {
-    this.store.dispatch({ type: RESET_FONT_SIZE });
+    this.store.dispatch(new preferencesActions.ResetFontSizeAction());
   }
 
 }

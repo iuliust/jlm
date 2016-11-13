@@ -67,22 +67,29 @@
 
 .liste-sections {
 	list-style-type: upper-alpha;
+	/*
+	quand on met inside, la puce est poussée vers le haut
+	pour je-ne-sais quelle raison.
+	Je mets donc outside temporairement.
+	*/
 	list-style-position: inside;
 	font-weight: bold;
-    -webkit-padding-start: 0;
 
-	.section {
+	article.section {
+		display: list-item;
 		font-family: 'Lora', serif;
-		font-weight: normal;
+		font-weight: bold;
 		font-size: 1em;
 		margin: 1em 0;
 
 		.titre-section {
+			font-weight: bold;
+			display: inline;
 			margin: 0;
 		}
 
-		.introduction {
-			font-style: italic;
+		.titre-section ~ * {
+			font-weight: normal;
 		}
 
 		& > p {
