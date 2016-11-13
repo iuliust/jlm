@@ -32,7 +32,7 @@ côté front :
 - [ ] images responsives
 - [ ] getUserMedia (ou la nouvelle spec, mais je ne l'ai pas encore étudiée)
 - [ ] Le site pourrait utiliser un système de notifications
-- [ ] Le site pourrait s'adapter à la luminosité ambiante (histoire de rigoler un coup) // seul Firefox gère cette API pour l'instant
+- [ ] Le site pourrait s'adapter à la luminosité ambiante (histoire de rigoler un coup) // mal géré par Chrome pour l'instant
 - [ ] utiliser le client GraphQL pour limiter les échanges client/serveur
 - [ ] JWT (une intégration avec Auth0 ?)
 - [ ] Peut-être utiliser NativeScript pour déployer l'application sur le Play Store, Windows Universal, Linux, OSX, Windows, etc...
@@ -47,6 +47,10 @@ côté backend :
 - [ ] Redis, mongo ou autre un SGDB de style NoSQL, quoique ce n'est pas forcément nécessaire
 
 idéalement, il serait intéressant de mettre en place un environnement d'intégration continue avec Travis CI ou autre, plus Docker etc...
+
+pour mettre à jour la console de développement, la commande qui colle le mieux au projet est :
+
+`ng init --prefix=jlm --style=scss --name=jlm-front`
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.17.
 

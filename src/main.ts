@@ -10,8 +10,8 @@ if (environment.production) {
   enableProdMode();
 }
 
-let options: CompilerOptions = {
-  defaultEncapsulation: ViewEncapsulation.Emulated
-};
+// let options: CompilerOptions = {
+//   defaultEncapsulation: ViewEncapsulation.Emulated
+// };
 
-platformBrowserDynamic().bootstrapModule(AppModule, options);
+platformBrowserDynamic().bootstrapModule(AppModule);

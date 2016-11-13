@@ -29,7 +29,6 @@ import { AppNavigationComponent } from './app-navigation/app-navigation.componen
 import { AppLayoutComponent } from './app-layout/app-layout.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-
 @NgModule({
 	declarations: [
 		AppComponent,
