@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
-
 @Component({
 	selector: 'jlm-root',
 	templateUrl: './app.component.html',

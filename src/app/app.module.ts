@@ -16,6 +16,7 @@ import { StoreModule } from '@ngrx/store';
 import { AppRoutingModule } from './app-routing.module';
 import { ChapitreModule } from './chapitre';
 import { SharedModule } from './shared';
+import { StudioModule } from './studio';
 
 // importation des services maison
 import { preferencesReducer, IntersectionObserverService } from './shared';
@@ -49,6 +50,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 		SharedModule,
 		AppRoutingModule,
 		ChapitreModule,
+		StudioModule,
 
 		// modules Material Design
 		MaterialModule.forRoot(),
