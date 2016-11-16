@@ -1,9 +1,9 @@
 <md-sidenav-layout>
-	<md-sidenav #nav>
+	<md-sidenav #nav mode="push">
 		<jlm-app-navigation></jlm-app-navigation>
 	</md-sidenav>
 	<md-toolbar color="primary">
-		<button md-icon-button (click)="toggleSidenav()"><md-icon>menu</md-icon></button>
+		<button md-icon-button (click)="nav.open()"><md-icon>menu</md-icon></button>
 		<a [routerLink]="['/']">L'avenir en commun</a>
 	</md-toolbar>
 	<div>

@@ -5,5 +5,5 @@ export * from './app-state';
 export * from './chapitre.service';
 export * from './intersection-observer.service';
 export * from './shared.module';
-export * from './reducers/preferences';
+export * from './reducers';
 export * from './window-ref.service';

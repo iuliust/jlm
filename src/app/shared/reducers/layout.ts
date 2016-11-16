@@ -1,3 +1,5 @@
+import { Observable } from 'rxjs/Observable';
+import '@ngrx/core/add/operator/select';
 import { LayoutActionTypes, LayoutActions } from '../actions/layout';
 
 export interface State {
@@ -12,17 +14,17 @@ export function reducer(state: State = initialState, action: LayoutActions): Sta
     switch (action.type) {
         case LayoutActionTypes.OPEN_SIDENAV:
             return {
-                showSidenav: false
+                showSidenav: true
             };
 
         case LayoutActionTypes.CLOSE_SIDENAV:
             return {
-                showSidenav: true
+                showSidenav: false
             };
 
         case LayoutActionTypes.TOGGLE_SIDENAV:
             return {
-                showSidenav: (typeof action.onOrOff === undefined)
+                showSidenav: (action.onOrOff === undefined)
                     ? !state.showSidenav
                     : action.onOrOff
             };
@@ -30,4 +32,8 @@ export function reducer(state: State = initialState, action: LayoutActions): Sta
         default:
             return state;
     }
+}
+
+export function getShowSidenav(state$: Observable<State>) {
+    return state$.select(state => state.showSidenav);
 }

@@ -16,10 +16,10 @@ import { StoreModule } from '@ngrx/store';
 import { AppRoutingModule } from './app-routing.module';
 import { ChapitreModule } from './chapitre';
 import { SharedModule } from './shared';
-import { StudioModule } from './studio';
 
 // importation des services maison
-import { preferencesReducer, IntersectionObserverService } from './shared';
+import { IntersectionObserverService } from './shared';
+import { reducer } from './shared/reducers';
 import { WindowRef } from './shared';
 
 // importation des composants maison
@@ -44,13 +44,13 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 		BrowserModule,
 		FormsModule,
 		HttpModule,
-		StoreModule.provideStore({ preferences: preferencesReducer }),
+		StoreModule.provideStore(reducer),
 
 		// modules maison
 		SharedModule,
 		AppRoutingModule,
 		ChapitreModule,
-		StudioModule,
+		// StudioModule,
 
 		// modules Material Design
 		MaterialModule.forRoot(),

@@ -9,12 +9,14 @@ export const LayoutActionTypes = {
 
 export class OpenSidenav implements Action {
     type = LayoutActionTypes.OPEN_SIDENAV;
+    onOrOff: boolean = true;
 
     constructor() { }
 }
 
 export class CloseSidenav implements Action {
     type = LayoutActionTypes.CLOSE_SIDENAV;
+    onOrOff: boolean = false;
 
     constructor() { }
 }
@@ -22,7 +24,7 @@ export class CloseSidenav implements Action {
 export class ToggleSidenav implements Action {
     type = LayoutActionTypes.TOGGLE_SIDENAV;
 
-    constructor(public onOrOff: boolean) { }
+    constructor(public onOrOff?: boolean) { }
 }
 
 export type LayoutActions = OpenSidenav
