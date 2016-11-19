@@ -16,6 +16,14 @@ iuliust
 Attention, quand j'installe les dépendances avec `yarn install`, la compilation Ahead-of-Time ne fonctionne pas et rencontre des problèmes divers.
 En revanche, quand j'installe les dépendances avec `npm install`, cette dernière fonctionne sans poser de problème.
 
+Pour lancer le serveur : `ng serve`
+
+Pour tester le site sur une autre machine que la votre, lancez le serveur avec : `ng serve --host=0.0.0.0`
+
+Enfin, sachez qu'il faut lancer le serveur avec l'option --ssl pour pouvoir tester les fonctionnalités d'enregistrement audio/video :
+`ng serve --ssl`, ou encore `ng serve --host=0.0.0.0 --ssl`.
+Votre navigateur affichera un message d'avertissement sur le certificat auto-signé, choisissez de passer outre l'avertissement.
+
 L'autre but de ce site est de mettre en avant la pile technologique la plus moderne possible. C'est une véritable défi.
 Voici la pile que j'espère réussir à implémenter :
 côté front :

@@ -1,6 +1,6 @@
 /* tslint:disable:no-unused-variable */
 
-import { MaterialRootModule } from '@angular/material';
+import { MaterialModule } from '@angular/material';
 import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { Component, DebugElement } from '@angular/core';
@@ -23,7 +23,7 @@ describe('ChapitreNavigationComponent', () => {
         TestBed.configureTestingModule({
             declarations: [ ChapitreNavigationComponent, DummyComponent ],
             imports: [
-                MaterialRootModule,
+                MaterialRootModule.forRoot(),
                 RouterTestingModule.withRoutes([
                     { path: '', component: DummyComponent },
                     { path: 'chapitre/:chapitreId', component: DummyComponent }

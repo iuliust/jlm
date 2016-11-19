@@ -16,6 +16,7 @@ import { StoreModule } from '@ngrx/store';
 import { AppRoutingModule } from './app-routing.module';
 import { ChapitreModule } from './chapitre';
 import { SharedModule } from './shared';
+import { StudioModule } from './studio';
 
 // importation des services maison
 import { IntersectionObserverService } from './shared';

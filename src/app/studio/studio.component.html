@@ -1,5 +1,14 @@
-<p>
-  studio works!
-</p>
-<jlm-media-selector></jlm-media-selector>
-<p>StudioComponent ends here</p>
+<jlm-media-selector [(selectedMedia)]="monMedia"></jlm-media-selector>
+<ng-container [ngSwitch]="!!stream">
+    <ng-container *ngSwitchCase="true">
+        <jlm-media-stream-reader [stream]="stream" [muted]="recorder?.mediaRecorder?.state === 'recording' || recorder?.recordUrl"></jlm-media-stream-reader>
+        <jlm-media-recorder #recorder [stream]="stream"></jlm-media-recorder>
+    </ng-container>
+    <div *ngSwitchCase="false">
+        <button (click)="launch()">stream !!</button>
+    </div>
+</ng-container>
+<!--vinci
+back en java
+front angular
+jhipster-->

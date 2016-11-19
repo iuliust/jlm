@@ -1,19 +1,6 @@
-<p>
-  media-selector works!
-</p>
-<button (click)="enumerateDevices()">get the devices !1</button>
-<table *ngIf="devices">
-  <tr>
-    <td>deviceId</td>
-    <td>groupId</td>
-    <td>kind</td>
-    <td>label</td>
-  </tr>
-  <tr *ngFor="let device of devices">
-    <td>{{device.deviceId}}</td>
-    <td>{{device.groupId}}</td>
-    <td>{{device.kind}}</td>
-    <td>{{device.label}}</td>
-  </tr>
-</table>
-<p>MediaSelector ends here</p>
+<form [formGroup]="registerForm">
+  <label>séléctionner un micro</label>
+  <select formControlName="montruc">
+    <option *ngFor="let micro of devices; trackBy: trackByFn" [ngValue]="micro">{{micro.deviceId | slice:0:8}}</option>
+  </select>
+</form>

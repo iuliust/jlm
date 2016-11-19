@@ -16,9 +16,14 @@
     ]
   },
   "files": [
-    "./main.ts"
+    "./main.ts",
+    "./typings.d.ts"
   ],
   "filesGlob": [
     "./**/*.module.ts"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "genDir": "aot",
+    "skipMetadataEmit" : true
+  }
 }

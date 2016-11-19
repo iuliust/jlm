@@ -2,7 +2,7 @@
 import { RouterTestingModule } from '@angular/router/testing';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { MaterialRootModule } from '@angular/material';
+import { MaterialModule } from '@angular/material';
 import { Component, DebugElement } from '@angular/core';
 
 import { AppLayoutComponent } from './app-layout.component';
@@ -19,7 +19,7 @@ describe('AppLayoutComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ MaterialRootModule, RouterTestingModule ],
+      imports: [ MaterialRootModule.forRoot(), RouterTestingModule ],
       declarations: [ AppLayoutComponent, AppNavigationStubComponent ]
     })
     .compileComponents();
