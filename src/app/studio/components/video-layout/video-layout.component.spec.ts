@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { MediaStreamReaderComponent } from './media-stream-reader.component';
+import { VideoLayoutComponent } from './video-layout.component';
 
-describe('MediaStreamReaderComponent', () => {
-  let component: MediaStreamReaderComponent;
-  let fixture: ComponentFixture<MediaStreamReaderComponent>;
+describe('VideoLayoutComponent', () => {
+  let component: VideoLayoutComponent;
+  let fixture: ComponentFixture<VideoLayoutComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MediaStreamReaderComponent ]
+      declarations: [ VideoLayoutComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MediaStreamReaderComponent);
+    fixture = TestBed.createComponent(VideoLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

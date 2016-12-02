@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowJs": true,
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -15,12 +16,13 @@
       "../node_modules/@types"
     ]
   },
-  "files": [
-    "./main.ts",
-    "./typings.d.ts"
+  "include": [
+    "./typings.d.ts",
+    "./app/**/*.ts",
+    "./main.ts"
   ],
-  "filesGlob": [
-    "./**/*.module.ts"
+  "exclude": [
+    "./**/*.spec.ts"
   ],
   "angularCompilerOptions": {
     "genDir": "aot",

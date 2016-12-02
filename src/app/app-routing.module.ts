@@ -2,10 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { ChapitrePageComponent, ChapitreComponent } from './chapitre';
-import { HomeComponent } from './home/home.component';
-import { EncartFiltresComponent } from './encart-filtres/encart-filtres.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-// import { StudioComponent } from './studio/studio.component';
+import { HomeComponent } from './containers/home/home.component';
+import { EncartFiltresComponent } from './containers/encart-filtres/encart-filtres.component';
+import { PageNotFoundComponent } from './containers/page-not-found/page-not-found.component';
 
 export const routes: Routes = [
 		{ path: '', component: HomeComponent },
@@ -22,7 +21,6 @@ export const routes: Routes = [
 				}
 			]
 		},
-		// { path: 'studio', component: StudioComponent },
 		{ path: 'studio', loadChildren: 'app/studio/studio.module#StudioModule' },
 		{ path: 'erreur404', component: PageNotFoundComponent },
 		{ path: '**', redirectTo: '/erreur404' }

@@ -1,29 +1,39 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { MdCoreModule, MdIconModule } from '@angular/material';
+
+import { StudioRoutingModule } from './studio-routing.module';
 
 import { StudioComponent } from './studio.component';
 import { MediaSelectorComponent } from './components/media-selector/media-selector.component';
 import { MediaRecorderComponent } from './components/media-recorder/media-recorder.component';
-import { MediaStreamReaderComponent } from './components/media-stream-reader/media-stream-reader.component';
+import { VideoListComponent } from './components/video-list/video-list.component';
 
-export const routes: Routes = [
-  { path: '', component: StudioComponent }
-];
+import { StudioHomeComponent } from './containers/studio-home/studio-home.component';
+import { TemoignerPageComponent } from './containers/temoigner-page/temoigner-page.component';
+import { InputStreamDirective } from './shared/input-stream/input-stream.directive';
+import { VideoLayoutComponent } from './components/video-layout/video-layout.component';
 
 @NgModule({
   imports: [
     CommonModule,
     ReactiveFormsModule,
     FormsModule,
-    RouterModule.forChild(routes)
+    StudioRoutingModule,
+    MdCoreModule,
+    MdIconModule
   ],
   declarations: [
     StudioComponent,
     MediaSelectorComponent,
     MediaRecorderComponent,
-    MediaStreamReaderComponent
+    VideoListComponent,
+
+    StudioHomeComponent,
+    TemoignerPageComponent,
+    InputStreamDirective,
+    VideoLayoutComponent
   ]
 })
 export class StudioModule { }
