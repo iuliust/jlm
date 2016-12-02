@@ -1,5 +1,4 @@
-<button *ngIf="canStart" (click)="start()">start recording</button>
-<button *ngIf="canPause" (click)="pause()">pause recording</button>
-<button *ngIf="canResume" (click)="resume()">resume recording</button>
-<button *ngIf="canStop" (click)="stop()">stop recording</button>
-<video *ngIf="recordUrl" [src]="recordUrl" controls></video>
+<button *ngIf="canStart" class="start-button" md-icon-button (click)="start()">start</button>
+<button *ngIf="canPause" class="pause-button" md-icon-button (click)="pause()"><md-icon>pause</md-icon></button>
+<button *ngIf="canResume" class="resume-button" md-icon-button (click)="resume()">resume</button>
+<button *ngIf="canStop" class="stop-button" md-icon-button (click)="stop()"><md-icon>stop</md-icon></button>

@@ -1,0 +1,16 @@
+<p *ngIf="!hasAccepted">
+    Pour enregistrer votre message, veuillez accepter de partager le signal
+    de votre caméra, ou au moins de votre micro.<br>
+    <button (click)="acceptCapture()">J'ai compris</button>
+</p>
+<ng-container [ngSwitch]="!!stream">
+    <jlm-video-layout *ngSwitchCase="true">
+        <div class="video-layout-video">
+            <video [jlmInputStream]="stream" muted></video>
+        </div>
+        <div class="video-layout-controls">
+            <jlm-media-recorder [stream]="stream" (recordChange)="addRecord($event)"></jlm-media-recorder>
+        </div>
+    </jlm-video-layout>
+</ng-container>
+<jlm-video-list [videos]="videos"></jlm-video-list>

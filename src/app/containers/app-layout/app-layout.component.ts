@@ -2,8 +2,8 @@ import { Component, ViewChild, OnInit, AfterViewInit } from '@angular/core';
 import { MdSidenav } from '@angular/material/sidenav';
 import { Store } from '@ngrx/store';
 import 'rxjs/add/operator/let';
-import * as layoutActions from '../shared/actions/layout';
-import * as fromRoot from '../shared/reducers';
+import * as layoutActions from '../../shared/actions/layout';
+import * as fromRoot from '../../shared/reducers';
 
 @Component({
   selector: 'jlm-app-layout',

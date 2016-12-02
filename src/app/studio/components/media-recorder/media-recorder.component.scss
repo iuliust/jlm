@@ -1,0 +1,16 @@
+.start-button, .resume-button {
+    color: red;
+}
+
+:host {
+    display: flex;
+    flex-direction: row;
+
+    [md-icon-button] {
+        display: flex;
+    }
+
+    [md-icon-button] md-icon {
+        margin: auto;
+    }
+}

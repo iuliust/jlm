@@ -1,0 +1,2 @@
+<video *ngFor="let video of videos; let i = index" [src]="getUrl(video)[1]" #el (click)="el.play()" controls download="boubu.webm">
+</video>

@@ -5,18 +5,11 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 
 import { StoreModule } from '@ngrx/store';
-// je laisse ces commentaires pour garder une trace des modules material utilisés dans cette application
-// import { MdCoreModule } from '@angular/material/core';
-// import { MdSidenavModule } from '@angular/material/sidenav';
-// import { MdToolbarModule } from '@angular/material/toolbar';
-// import { MdIconModule } from '@angular/material/icon';
-// import { MdButtonModule } from '@angular/material/button';
 
 // importation des modules maison
 import { AppRoutingModule } from './app-routing.module';
 import { ChapitreModule } from './chapitre';
 import { SharedModule } from './shared';
-import { StudioModule } from './studio';
 
 // importation des services maison
 import { IntersectionObserverService } from './shared';
@@ -25,11 +18,11 @@ import { WindowRef } from './shared';
 
 // importation des composants maison
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { EncartFiltresComponent } from './encart-filtres/encart-filtres.component';
-import { AppNavigationComponent } from './app-navigation/app-navigation.component';
-import { AppLayoutComponent } from './app-layout/app-layout.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './containers/home/home.component';
+import { EncartFiltresComponent } from './containers/encart-filtres/encart-filtres.component';
+import { AppNavigationComponent } from './containers/app-navigation/app-navigation.component';
+import { AppLayoutComponent } from './containers/app-layout/app-layout.component';
+import { PageNotFoundComponent } from './containers/page-not-found/page-not-found.component';
 
 @NgModule({
 	declarations: [
@@ -45,6 +38,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 		BrowserModule,
 		FormsModule,
 		HttpModule,
+
 		StoreModule.provideStore(reducer),
 
 		// modules maison

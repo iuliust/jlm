@@ -1,0 +1,27 @@
+:host {
+    display: flex;
+    position: relative;
+}
+
+/deep/ .video-layout-video {
+    display: inline-flex;
+}
+
+/deep/ .video-layout-controls {
+    display: inline-flex;
+    flex-direction: row;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: hsla(0, 20%, 100%, 0.5);
+}
+
+/deep/ .video-layout-backdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
