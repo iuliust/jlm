@@ -13,9 +13,9 @@ export class InputStreamDirective implements OnInit {
 
   @Input('jlmInputStream')
   set stream(stream: MediaStream) {
-    if (! (stream instanceof MediaStream)) {
-      throw new Error('stream doit être de type MediaStream');
-    }
+    // if (! (stream instanceof MediaStream)) {
+    //   throw new Error('stream doit être de type MediaStream');
+    // }
     this._stream = stream;
     if (stream) {
       let dangerousUrl = window.URL.createObjectURL(stream);
