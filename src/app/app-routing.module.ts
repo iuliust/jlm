@@ -9,7 +9,7 @@ import { PageNotFoundComponent } from './containers/page-not-found/page-not-foun
 export const routes: Routes = [
 		{ path: '', component: HomeComponent },
 		{
-			path: 'chapitres',
+			path: 'programme',
 			children: [
 				{ path: '', component: ChapitreComponent },
 				{
