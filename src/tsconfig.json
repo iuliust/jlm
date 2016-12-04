@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "allowJs": false,
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -10,18 +11,19 @@
     "noImplicitAny": false,
     "outDir": "../dist/out-tsc",
     "sourceMap": true,
-    "target": "es5",
+    "target": "es2015",
     "typeRoots": [
       "../node_modules/@types"
     ]
   },
   "include": [
-    "./main.ts",
     "./typings.d.ts",
-    "./**/*.module.ts"
+    "./**/*.module.ts",
+    "./client.ts"
   ],
   "exclude": [
-    "./**/*.spec.ts"
+    "./**/*.spec.ts",
+    "node_modules"
   ],
   "angularCompilerOptions": {
     "genDir": "aot",

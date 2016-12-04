@@ -1,8 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { UniversalModule } from 'angular2-universal/node';
+import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
+
 
 import { StoreModule } from '@ngrx/store';
 
@@ -34,6 +36,7 @@ import { PageNotFoundComponent } from './containers/page-not-found/page-not-foun
 		PageNotFoundComponent
 	],
 	imports: [
+		UniversalModule,
 		// modules de @angular
 		BrowserModule,
 		FormsModule,
