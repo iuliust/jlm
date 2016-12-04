@@ -9,6 +9,7 @@ const app = express();
 app.engine('.html', createEngine({}));
 //...
 // bootstrap universal app
+console.log('port numéro : ', app.get('port'));
 function ngApp(req: any, res: any) {
   res.render('index', {
     req,
@@ -17,7 +18,8 @@ function ngApp(req: any, res: any) {
     preboot: false,
     baseUrl: '/',
     requestUrl: req.originalUrl,
-    originUrl: req.hostname
+    originUrl: `http://localhost:${ app.get('port') }`
+    // originUrl: req.hostname
   });
 }
 // use universal for specific routes
