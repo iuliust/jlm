@@ -17,6 +17,7 @@
   },
   "include": [
     "./main.ts",
+    "./hmr/ts",
     "./typings.d.ts",
     "./**/*.module.ts"
   ],
