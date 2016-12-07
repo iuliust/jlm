@@ -21,7 +21,7 @@ export const routes: Routes = [
 				}
 			]
 		},
-		{ path: 'studio', loadChildren: 'app/studio/studio.module#StudioModule' },
+		{ path: 'studio', loadChildren: './studio/studio.module#StudioModule' },
 		{ path: 'erreur404', component: PageNotFoundComponent },
 		{ path: '**', redirectTo: '/erreur404' }
 	];

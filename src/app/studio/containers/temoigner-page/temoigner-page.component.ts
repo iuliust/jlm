@@ -20,7 +20,7 @@ export class TemoignerPageComponent implements OnInit {
     // this.acceptCapture();
   }
 
-  async launch() {
+  /*async launch() {
     this.hasAccepted = true;
     try {
       let constraints: MediaStreamConstraints = {
@@ -32,6 +32,22 @@ export class TemoignerPageComponent implements OnInit {
     } catch (e) {
       console.error(e);
     }
+  }*/
+
+  launch() {
+    this.hasAccepted = true;
+    let constraints: MediaStreamConstraints = {
+      audio: true,
+      video: true
+    };
+
+    navigator.mediaDevices.getUserMedia(constraints)
+      .then((stream) => {
+        this.stream = stream;
+      })/*
+      .catch(e => {
+        console.error(e);
+      })*/;
   }
 
   addRecord(enregistrement: Blob) {
